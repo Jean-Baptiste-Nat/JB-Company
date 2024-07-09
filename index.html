@@ -1,0 +1,3578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Page Splash -->
+    <div id="splash-screen" class="splash-screen">
+        <img src="img/logo.png" alt="Logo" class="splash-logo">
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="title">
+                    <h1>&Company</h1>
+                </div>
+            </div>
+            <div class="right">
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="showTeamPage()"><img src="img/teamwork.png" alt=""></i>Mon Equipe</a></li>
+                        <li class="none"><a href="#projets" onclick="openProjectsPage()"><img src="img/project.png" alt=""></i>Projets</a></li>
+                        <li><a href="javascript:void(0);" onclick="openCompetencesPage()"><img src="img/document.png" alt=""> Compétences<strong style="color: orange;">/</strong>UX</a></li>
+                        <li class="none"><a href="javascript:void(0);" onclick="showContactPage()"><img src="img/card.png" >Contact</a></li>
+                        <!--li><a href=""><img src="img/clock.png" alt="">Expériences</a></li>
+                        <li><a href="">Certifications</a></li-->
+                        
+                        <li><a href="javascript:void(0);" onclick="showBlogsPage()"><img src="img/dashboard.png" alt="">Blogs</a></li>
+                        <li><a href="javascript:void(0);" id="open-comments" onclick="openCommentsPage()"><img src="img/message.png" alt="">Commentaire</a></li>
+                        <!--li><a href="">Mon Equipe</a></li-->
+                        <li><a href="javascript:void(0);" onclick="openDevisPage()" style="border-radius: 10px; border: 2px solid white;"><img src="img/report.png" alt="">Demander un devis</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Menu flottant -->
+        <div class="floating-menu" id="floatingMenu">
+            <ul>
+
+                <li><a href="javascript:void(0);" onclick="showTeamPage()"><img src="img/teamwork.png" alt=""></i>Mon Equipe</a></li>
+                <li><a href="javascript:void(0);" onclick="openProjectsPage()"><img src="img/project.png" alt=""></i>Projets</a></li>
+                <li><a href="javascript:void(0);" onclick="openCompetencesPage()"><img src="img/document.png" alt=""> Compétences<strong style="color: orange;">/</strong>UX</a></li>
+                <!-- Lien de navigation pour afficher la page Blogs en float -->
+
+                <!--li><a href=""><img src="img/clock.png" alt="">Expériences</a></li>
+                <li><a href="">Certifications</a></li-->
+                <li class="none"><a href="javascript:void(0);" onclick="showTutorialPage()"><img src="img/online-training.png" alt="">Tutoriels</a></li>
+                
+                <!-- Bouton pour afficher la page des blogs -->
+                <li class="none"><a href="javascript:void(0);" onclick="showContactPage()"><img src="img/card.png" >Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="showBlogsPage()"><img src="img/dashboard.png" alt="">Blogs</a></li>
+                <li><a href="javascript:void(0);" id="open-comments" onclick="openCommentsPage()"><img src="img/message.png" alt="">Commentaire</a></li>
+
+
+                <!--li><a href="">Mon Equipe</a></li-->
+                <li><a href="javascript:void(0);" onclick="openDevisPage()" style="border-radius: 10px; border: 2px solid white;"><img src="img/report.png" alt="">Demander un devis</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Votre contenu principal -->
+    <main>
+        <section class="intro-section">
+            <div class="intro-content">
+                    <div class="text-content">
+                        <h1>NATHANAEL <br><strong style="color: orange;">JEAN BAPTISTE</strong></h1>
+                        <h2>Monteur Vidéo, Graphiste, Rédacteur Web, Développeur Web &Mobile</h2>
+                        <p>En collaboration avec mon équipe de passionnés, composée d'un Monteur Vidéo créatif, d'un Graphiste talentueux, d'un Rédacteur Web engageant, et d'un Développeur innovant, nous transformons vos idées en réalisations visuelles et numériques exceptionnelles.</p>
+                        <a href="javascript:void(0);" onclick="showTeamPage()" class="button">
+                            Mon Equipe<i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="n-content">
+                        <ul>
+                            <li><a href="#projets" onclick="openProjectsPage()"><img src="img/project.png" alt=""></i>Projets</a></li>
+                            <li><a href="javascript:void(0);" onclick="showTutorialPage()"><img src="img/online-training.png" alt="">Tutoriels</a></li>
+                            <li><a href="javascript:void(0);" onclick="showContactPage()"><img src="img/card.png" alt="">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+
+
+        <section class="development-section">
+            <div class="section-header">
+                <h2>Développement Web</h2>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                &su=Demande%20d'informations%20pour%20développement%20de%20site%20web
+                &body=Bonjour%2C%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20actuellement%20à%20la%20recherche%20d'informations%20concernant%20le%20développement%20d'un%20site%20web.%20J'aimerais%20discuter%20des%20services%20que%20vous%20proposez,%20ainsi%20que%20des%20options%20de%20personnalisation%20et%20de%20tarification%20disponibles.%0A%0AMerci%20de%20me%20fournir%20plus%20de%20détails%20sur%20vos%20services,%20vos%20expériences%20antérieures%20et%20vos%20tarifs.%0A%0ADans%20l'attente%20de%20votre%20réponse.%0A%0ACordialement,%0A[Votre%20Nom]
+                " style="color: orange;">
+                    Plus d'infos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="projects-list">
+                <div class="project-item" onclick="openFloatingPage()">
+                    <img src="img/web1.jpg" alt="Projet 1" class="project-image">
+                    <h3>Design WebSite</h3>
+                </div>
+                <a href="doc/html.txt" class="project-item" target="_blank">
+                    <img src="img/html.jpg" alt="Projet 2" class="project-image">
+                    <h3>HTML</h3>
+                </a>
+                <a href="doc/css.txt" class="project-item" target="_blank">
+                    <img src="img/css.jpg" alt="Projet 3" class="project-image">
+                    <h3>CSS</h3>
+                </a>
+                <a href="doc/js.txt" class="project-item" target="_blank">
+                    <img src="img/js.jpg" alt="Projet 4" class="project-image">
+                    <h3>JavaScript</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Page flottante pour le premier projet -->
+        <div class="floating-page" id="floatingPage">
+            <div class="floating-page-header">
+                <h2>Pages</h2>
+                <i class="fas fa-times close-btn" onclick="closeFloatingPage()"></i>
+            </div>
+            <div class="floating-page-content">
+                <div class="image-container">
+                    <div class="image-slide" style="background-image: url('img/home.jpg');">
+                        <h3 class="image-title">Home</h3>
+                    </div>
+                    <div class="image-slide" style="background-image: url('img/log.jpg');">
+                        <h3 class="image-title">Login</h3>
+                    </div>
+                    <div class="image-slide" style="background-image: url('img/login.jpg');">
+                        <h3 class="image-title">SignUp</h3>
+                    </div>
+                    <div class="image-slide" style="background-image: url('img/cont.png');">
+                        <h3 class="image-title">Contact</h3>
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <i class="fas fa-arrow-left prev-btn"></i>
+                    <i class="fas fa-arrow-right next-btn"></i>
+                    <i class="fas fa-search-plus zoom-in-btn"></i>
+                    <i class="fas fa-search-minus zoom-out-btn"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <section class="video-section">
+            <div class="new-header">
+                <h2>Montage Vidéo</h2>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                &su=Demande%20d'informations%20pour%20montage%20vidéo
+                &body=Bonjour%2C%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20vos%20services%20de%20montage%20vidéo.%20J'aimerais%20obtenir%20des%20informations%20détaillées%20sur%20les%20options%20que%20vous%20proposez,%20notamment%20pour%20:%0A%0A-%20Vidéos%20pour%20les%20réseaux%20sociaux%0A-%20Video%20clip%0A-%20Vidéos%20publicitaires%0A-%20Vidéos%20événementielles%0A-%20Vidéos%20documentaires%20et%20de%20courts-métrages%0A%0AMerci%20de%20me%20fournir%20plus%20de%20détails%20sur%20vos%20services,%20vos%20tarifs%20et%20les%20possibilités%20de%20personnalisation%20disponibles%20pour%20chaque%20type%20de%20vidéo.%0A%0ADans%20l'attente%20de%20votre%20retour.%0A%0ACordialement,%0A[Votre%20Nom]
+                " class="more-info-link">
+                    Plus d'infos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="items-container">
+                <div class="video-item">
+                    <!-- Insérez ici votre vidéo -->
+                    <video controls autoplay loop muted class="video">
+                        <source src="vid/B.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                    </video>
+                </div>
+                <div class="list-item">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <div class="image" style="background-image: url('img/tt.jpg');"></div>
+                                <h3>Vidéos pour les réseaux sociaux</h3>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <div class="image" style="background-image: url('img/pu.jpg');"></div>
+                                <h3>Vidéos publicitaire</h3>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-content">
+                                
+                                <div class="image" style="background-image: url('img/ev.jpg');"></div>
+                                <h3>Vidéos événementielles</h3>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-content">
+                                
+                                <div class="image" style="background-image: url('img/dc.jpg');"></div>
+                                <h3>Vidéos documentaires et de courts-métrages</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-list">
+                        <img src="img/app.png" alt="" onclick="openItemList()">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Page flottante pour la liste d'items -->
+        <div class="floating-page floating-page-list" id="itemListPage">
+            <div class="floating-page-header">
+                <h2>Liste d'Items</h2>
+                <i class="fas fa-times close-btn" onclick="closeItemList()"></i>
+            </div>
+            <div class="floating-page-content">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="item-content">
+                            <h3>Titre Item 1</h3>
+                            <div class="image" style="background-image: url('img/ev.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-content">
+                            <h3>Titre Item 2</h3>
+                            <div class="image" style="background-image: url('chemin-vers-votre-image2.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-content">
+                            <h3>Titre Item 3</h3>
+                            <div class="image" style="background-image: url('chemin-vers-votre-image3.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-content">
+                            <h3>Titre Item 4</h3>
+                            <div class="image" style="background-image: url('chemin-vers-votre-image4.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <!-- Pied de page -->
+    <footer class="footer-slideshow">
+        <div class="footer-overlay">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="showTeamPage()">Mon Equipe</a></li>
+                        <li><a href="javascript:void(0);" onclick="openProjectsPage()">Projets</a></li>
+                        <!--li><a href="#competences">Compétences</a></li-->
+                        <li><a href="javascript:void(0);" onclick="showContactPage()">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61560923653734&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/natjbCompany"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/nathana%C3%ABl-jean-baptiste-667b66314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Jean-Baptiste-Nat?ocid=AIDcmmli8vlwie_SEM__k_CjwKCAjwps-zBhAiEiwALwsVYcFJGPz8MJK_YitQTd0gNBHEgHH_OT8c8QDA0dRC3riW-Z-iJXnmpBoCpUoQAvD_BwE_k_"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <p>Email: 
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                        &su=Demande%20d'informations
+                        &body=Bonjour%20JB%20Company,%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20[votre%20intérêt%20ou%20demande].%20J'aimerais%20en%20savoir%20plus%20sur%20[détail%20de%20la%20demande].%0A%0AMerci%20pour%20votre%20aide%20et%20votre%20temps.%0A%0ACordialement,%0A[Votre%20Nom]
+                        ">
+                            natjbcompany@gmail.com
+                        </a>
+                    </p>
+                    
+                    <p>Téléphone: <a href="tel:+5815784630">+1 (581) 578 4630</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NAT...JEAN BAPTISTE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Bouton de défilement vers le haut -->
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+    <!-- Liste des réseaux sociaux -->
+    <div class="social-list">
+        
+        <a href="https://www.facebook.com/profile.php?id=61560923653734&mibextid=LQQJ4d" target="_blank" class="social-item">
+            <img src="social/f.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">Facebook</span>
+        </a>
+        <a href="https://whatsapp.com/biz/" target="_blank" class="social-item">
+            <img src="social/w.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/natjb_company?igsh=MWg3MWI4bnExZWJxOA%3D%3D&utm_source=qr
+        " target="_blank" class="social-item">
+            <img src="social/i.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">Instagram</span>
+        </a>
+        <a href="https://m.me/375588968964993" target="_blank" class="social-item">
+            <img src="social/m.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">Messenger</span>
+        </a>
+        <a href="https://x.com/natjbCompany" target="_blank" class="social-item">
+            <img src="social/t.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">Twitter</span>
+        </a>
+        <a href="https://github.com/Jean-Baptiste-Nat?ocid=AIDcmmli8vlwie_SEM__k_CjwKCAjwps-zBhAiEiwALwsVYcFJGPz8MJK_YitQTd0gNBHEgHH_OT8c8QDA0dRC3riW-Z-iJXnmpBoCpUoQAvD_BwE_k_" target="_blank" class="social-item">
+            <img src="social/g.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">GitHub</span>                                                                                                        
+        </a>
+        <a href="https://www.linkedin.com/in/nathana%C3%ABl-jean-baptiste-667b66314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-item">
+            <img src="social/l.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <span class="social-name">Linkedin</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Page des projets flottante -->
+    <div class="floating-project" id="projectsPage">
+        <div class="floating-content">
+            <h2><div> <img src="img/logo.png" alt="" style="width: 30px; height: 30px;"> Projects</div>
+                                
+                <i class="fas fa-times" onclick="closeProjectsPage()"></i>
+            </h2>
+            <ul class="project-list">
+                <li>
+                    <div class="proj">
+                        <img src="img/app_icon.png" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Mobile Multiplateforme</h3>
+                        <p>Développement d'une application mobile pour iOS et Android utilisant Flutter et Firebase.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.funcamerastudio.collagemaker&pcampaignid=web_share" class="consult-link">Consulter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="proj">
+                        <img src="img/logo_copy9_500x.webp" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Développement complet d'un site e-commerce avec intégration de systèmes de paiement sécurisés et gestion de base de données.</p>
+                        <a href="https://www.hayleyelsaesser.com/?gclid=CjwKCAjw1emzBhB8EiwAHwZZxQAICSSTzbwRxzWxEqRzg9YVGK3TgB573U4P9j6ZEPauJ-D03DuOKhoCP_4QAvD_BwE" class="consult-link">Consulter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="proj">
+                        <img src="img/hch.jpeg" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio de Design Graphique</h3>
+                        <p>Création d'un portfolio en ligne pour un graphiste freelance, incluant des fonctionnalités interactives et une interface utilisateur responsive.</p>
+                        <a href="https://cha-cha.ca/portfolio/cote-jean/" class="consult-link">Consulter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="proj">
+                        <img src="img/pro.jpg" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Vidéo Promotionnelle</h3>
+                        <p>Montage et production d'une vidéo promotionnelle pour une entreprise de technologie, mettant en valeur leurs produits et services.</p>
+                        <a href="vid/pub.mp4" class="consult-link">Consulter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- Page des compétences flottante -->
+    <div class="floating-competences" id="competencesPage">
+        <div class="moime">
+            <div class="titlepa">
+                <h2><img src="img/logo.png" style="width: 30px; height: 30px;">Compétences<strong style="color: orange;">/</strong>UX <i class="fas fa-times" onclick="closeCompetencesPage()"></i></h2>
+            </div>
+            <div class="competences-content">
+                
+                <div class="background-diaspora"></div>
+                <h3>Compétences<strong style="color: orange;">/</strong>UX</h3>
+                <ul>
+                    <li>Langages de programmation: <strong style="color: orange;">C#</strong>, <strong style="color: orange;">Dart</strong>, <strong style="color: orange;">HTML</strong>, <strong style="color: orange;">CSS</strong>, <strong style="color: orange;">JavaScript</strong></li>
+                    <li>Frameworks et outils: <strong style="color: orange;">Flutter</strong>, <strong style="color: orange;">Firebase</strong>, <strong style="color: orange;">Xcode</strong>, <strong style="color: orange;">Android Studio</strong></li>
+                    <li>Logiciels: <strong style="color: orange;">Adobe Premiere Pro</strong>, <strong style="color: orange;">Photoshop</strong>, <strong style="color: orange;">VS Code</strong></li>
+                    <li>Plateformes: <strong style="color: orange;">iOS</strong>, <strong style="color: orange;">Android</strong>, <strong style="color: orange;">Windows</strong>, <strong style="color: orange;">macOS</strong>, <strong style="color: orange;">Web</strong>, <strong style="color: orange;">TV</strong></li>
+                    <li>Compétences générales: <strong style="color: orange;">Gestion de projet</strong>, <strong style="color: orange;">UI/UX Design</strong>, <strong style="color: orange;">Authentification Firebase</strong>, <strong style="color: orange;">Stockage</strong></li>
+                </ul>
+                <h4>Expériences professionnelles</h4>
+                <p><strong style="color: orange; margin-bottom: 10px;">Développeur Web Full-Stack | Pro studio</strong><i style="margin-left: 30%; margin-bottom: 10px;">Janvier 2020 - Présent</i><br>Responsable du développement et de la maintenance de sites web et d'applications web. Utilisation de technologies modernes pour créer des solutions scalables.</p>
+                <p><strong style="color: orange; margin-bottom: 10px;">Graphiste | Agence Créative ABC</strong><i style="margin-left: 30%; margin-bottom: 10px;">Juin 2018 - Décembre 2019</i><br>Création de designs graphiques pour des campagnes marketing, des sites web et des applications mobiles. Collaboration avec les équipes marketing pour garantir une cohérence visuelle.</p>
+                <p><strong style="color: orange; margin-bottom: 10px;">Monteur Vidéo | Studio de Production DEF</strong><i style="margin-left: 30%; margin-bottom: 10px;">Mars 2016 - Mai 2018</i><br>Montage et post-production de vidéos pour des clients variés, y compris des publicités, des vidéos promotionnelles et des courts métrages.</p>
+                <h4>Formation et Certifications</h4>
+                <p><strong style="color: orange; margin-bottom: 10px;">Diplome en science Informatique | EPAJH</strong><i style="margin-left: 30%;">2014 - 2016</i></p>
+                <p><strong style="color: orange; margin-bottom: 10px;">Certificat en Design Graphique | CETINFO</strong><i style="margin-left: 30%;">2012 - 2013</i></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="blogsPage" class="floating-blogs">
+        <div class="blogs-header">
+            <h2>Blogs</h2>
+            <i class="fas fa-times" onclick="closeBlogsPage()"></i>
+        </div>
+        <div class="blogs-list">
+            <!-- Blog items ici -->
+            <div class="blog-item">
+                <img src="img/Paris_IFF_highres.jpg" alt="Blog Image">
+                <div class="blog-info">
+                    <div class="blog-infoplus">
+                        <img src="flag/france.png" alt="Avatar" class="avatar">
+                        <h3>Festival du Cinéma International de Paris</h3>
+                    </div>
+                    <p>Date: 5-12 août 2024</p>
+                    <p>Le Festival du Cinéma International de Paris est de retour pour une semaine de projections, de conférences et de rencontres avec des réalisateurs et des acteurs du monde entier. Venez découvrir les dernières créations cinématographiques et participez à des discussions passionnantes sur l'avenir du cinéma. Ne manquez pas la soirée d'ouverture avec la projection du film primé "Lumières de la Ville".</p>
+                    <div class="blog-footer">
+                        <a href="https://www.parisintlfest.com/">Consulter <i class="fas fa-arrow-right"></i></a>
+                        <div class="like-counter">
+                            <i class="fas fa-heart" onclick="increaseLike(this)"></i>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <img src="img/IMG_0951.jpg" alt="Blog Image">
+                <div class="blog-info">
+                    <div class="blog-infoplus">
+                        <img src="flag/globe.png" alt="Avatar" class="avatar">
+                        <h3>Web & Mobile DevCon 2024</h3>
+                    </div>
+                    <p>Date: 15-17 septembre 2024</p>
+                    <p>Rejoignez-nous à la Web & Mobile DevCon 2024, un événement incontournable pour les développeurs web et mobiles. Découvrez les dernières tendances et technologies dans le développement d'applications, assistez à des ateliers interactifs et rencontrez des experts de l'industrie. Les sujets incluront les PWA, Flutter, React Native, et bien plus encore. Inscrivez-vous dès maintenant pour bénéficier du tarif early bird !</p>
+                    <div class="blog-footer">
+                        <a href="https://dev-con.dev/">Consulter <i class="fas fa-arrow-right"></i></a>
+                        <div class="like-counter">
+                            <i class="fas fa-heart" onclick="increaseLike(this)"></i>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <img src="img/deze.png" alt="Blog Image">
+                <div class="blog-info">
+                    <div class="blog-infoplus">
+                        <img src="flag/globe.png" alt="Avatar" class="avatar">
+                        <h3>Design Expo 2024</h3>
+                    </div>
+                    <p>Date: 22-24 octobre 2024</p>
+                    <p>La Design Expo 2024 est le rendez-vous annuel des graphistes, designers et créatifs du monde entier. Venez explorer les innovations dans le domaine du design graphique, assister à des présentations inspirantes et participer à des ateliers pratiques. Rencontrez des leaders de l'industrie, échangez des idées et découvrez les dernières tendances en matière de design visuel. Un événement à ne pas manquer pour tous les passionnés de design !</p>
+                    <div class="blog-footer">
+                        <a href="https://www.dezeen.com/eventsguide/type/design-fairs/">Consulter <i class="fas fa-arrow-right"></i></a>
+                        <div class="like-counter">
+                            <i class="fas fa-heart" onclick="increaseLike(this)"></i>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajouter plus de blog items si nécessaire -->
+        </div>
+        <i class="fas fa-plus-circle add-button" onclick="showAddBlogPage()"></i>
+    </div>
+
+    <div id="addBlogPage" class="floating-add">
+        <div class="add-header">
+            <h2>Publication</h2>
+            <i class="fas fa-times" onclick="closeAddBlogPage()"></i>
+        </div>
+        <div class="add-content">
+            <div class="avatar-section">
+                <img src="flag/globe.png" alt="Avatar" class="avatar">
+                <i class="fas fa-edit" onclick="showAvatarPage()"></i>
+            </div>
+            <input type="text" placeholder="Titre" id="titleInput">
+            <input type="file" accept="image/*,video/*" id="fileInput" onchange="previewFile()">
+            <div id="preview"></div>
+            <textarea placeholder="Description" id="descriptionInput"></textarea>
+            <input type="text" id="linkInput" placeholder="Lien">
+            <div class="terms-section">
+                <input type="checkbox" id="termsCheckbox">
+                <label for="termsCheckbox">Accepter les <a href="javascript:void(0);" onclick="showTermsPage()">termes et conditions</a> de publication</label>
+            </div>
+            <button onclick="publishBlog()">Publier</button>
+        </div>
+    </div>
+
+    <div id="avatarPage" class="floating-avatar">
+        <div class="avatar-header">
+            <h2>Choisir un Avatar</h2>
+            <i class="fas fa-times" onclick="closeAvatarPage()"></i>
+        </div>
+        <div class="avatar-grid">
+            <!-- Liste d'avatars -->
+            <img src="flag/world.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/united-states.png" alt="Avatar" onclick="selectAvatar('img/avatar2.png')">
+            <img src="flag/united-kingdom.png" alt="Avatar" onclick="selectAvatar('img/avatar3.png')">
+            <img src="flag/tuvalu.png" alt="Avatar" onclick="selectAvatar('img/avatar4.png')">
+            <img src="flag/spain.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/senegal.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/portugal.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/lithuania.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/japan.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/jamaica.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/globe.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/germany.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/france.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/england.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/ecuador.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/colombia.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/china.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/chile.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/canada.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="flag/cameroon.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <!--img src="img/dashboard.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="img/dashboard.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="img/dashboard.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="img/dashboard.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')">
+            <img src="img/dashboard.png" alt="Avatar" onclick="selectAvatar('img/dashboard.png')"-->
+
+        
+            <!-- Ajouter plus d'avatars si nécessaire -->
+        </div>
+    </div>
+
+    <div id="termsPage" class="floating-terms">
+        <div class="terms-header">
+            <h2>Termes et Conditions</h2>
+            <i class="fas fa-times" onclick="closeTermsPage()"></i>
+        </div>
+        <div class="terms-content">
+            <!-- Contenu des termes et conditions -->
+            <p>Tous le monde a le droit publier sur ce blog</p>
+            <p>En soumettant ce formulaire, vous acceptez que vos informations soient utilisées uniquement pour traiter votre demande et pour vous contacter. Vos données ne seront jamais partagées avec des tiers sans votre consentement. Pour plus d'informations, consultez notre Politique de Confidentialité.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Structure de la page "Mon Équipe" -->
+    <div id="teamPage" class="floating-fullscreen">
+        <div class="team-header">
+            <h2>Mon Équipe</h2>
+            <i class="fas fa-times" onclick="closeTeamPage()"></i>
+        </div>
+        <div class="team-content">
+            <div class="team-list">
+                <div class="team-item">
+                    <div class="im">
+                        <img src="img/12.jpg" alt="User 1">
+                    </div>
+                    <div class="user-info">
+                        <h3>Nat...JEAN BAPTISTE</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                        &su=Demande%20d'informations
+                        &body=Bonjour%20JB%20Company,%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20[votre%20intérêt%20ou%20demande].%20J'aimerais%20en%20savoir%20plus%20sur%20[détail%20de%20la%20demande].%0A%0AMerci%20pour%20votre%20aide%20et%20votre%20temps.%0A%0ACordialement,%0A[Votre%20Nom]
+                        ">natjbcompany@gmail.com</a>
+                        <p>Développeur Mobile, Spécialiste UI/UX, Graphiste, Monteur Vidéo</p>
+                        <p>
+                            Spécialisée dans le développement d'applications mobiles pour iOS et Android et spécialites UI/UX. Elle a travaillé sur divers projets mobiles innovants, intégrant les dernières technologies et suivant les meilleures. Et aussi un graphiste talentueux avec une passion pour le design créatif. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="im">
+                        <img src="img/2.jpg" alt="User 1">
+                    </div>
+                    <div class="user-info">
+                        <h3>Jea...DUPONT</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                        &su=Demande%20d'informations
+                        &body=Bonjour%20JB%20Company,%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20[votre%20intérêt%20ou%20demande].%20J'aimerais%20en%20savoir%20plus%20sur%20[détail%20de%20la%20demande].%0A%0AMerci%20pour%20votre%20aide%20et%20votre%20temps.%0A%0ACordialement,%0A[Votre%20Nom]
+                        ">jea...natjbCompany@gmail.com</a>
+                        <p>Développeur Web Full-Stack</p>
+                        <p>Jean est un développeur polyvalent avec plus de 5 ans d'expérience dans le développement de sites web et d'applications web. Il maîtrise plusieurs langages de programmation et frameworks, et excelle dans la création de solutions scalables et performantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-list">
+                <div class="team-item">
+                    <div class="im">
+                        <img src="img/3.jpg" alt="User 1">
+                    </div>
+                    <div class="user-info">
+                        <h3>Neem...MURTHUL</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                        &su=Demande%20d'informations
+                        &body=Bonjour%20JB%20Company,%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20[votre%20intérêt%20ou%20demande].%20J'aimerais%20en%20savoir%20plus%20sur%20[détail%20de%20la%20demande].%0A%0AMerci%20pour%20votre%20aide%20et%20votre%20temps.%0A%0ACordialement,%0A[Votre%20Nom]
+                        ">neem...natjbCompany@gmail.com</a>
+                        <p>Chef de Projet</p>
+                        <p>Neemie est un chef de projet expérimenté, spécialisé dans la gestion de projets complexes de développement web et mobile. Il excelle dans la coordination des équipes, la gestion des ressources et la livraison des projets dans les délais et le budget impartis.</p>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="im">
+                        <img src="img/4.jpg" alt="User 1">
+                    </div>
+                    <div class="user-info">
+                        <h3>Orli...SULLY</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=natjbcompany@gmail.com
+                        &su=Demande%20d'informations
+                        &body=Bonjour%20JB%20Company,%0A%0AJe%20m'appelle%20[Votre%20Nom]%20et%20je%20suis%20intéressé(e)%20par%20[votre%20intérêt%20ou%20demande].%20J'aimerais%20en%20savoir%20plus%20sur%20[détail%20de%20la%20demande].%0A%0AMerci%20pour%20votre%20aide%20et%20votre%20temps.%0A%0ACordialement,%0A[Votre%20Nom]
+                        ">orli...natjbCompany@gmail.com</a>
+                        <p>Rédacteur Web</p>
+                        <p>est un rédacteur web expérimenté, spécialisé dans la création de contenus engageants et optimisés pour le SEO. Il a travaillé sur une variété de projets, produisant des articles de blog, des descriptions de produits et des contenus de site web.</p>
+                    </div>
+                </div>
+                <!-- Répéter les éléments pour chaque membre de l'équipe -->
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    
+
+    
+
+    
+    <!-- Structure de la page "Tutoriel" -->
+    <div id="tutorialPage" class="floating-fullscreen">
+        <div class="tutorial-header">
+            <h2>Tutoriel</h2>
+            <i class="fas fa-times" onclick="closeTutorialPage()"></i>
+        </div>
+        <div class="tutorial-content">
+            <div class="tutorial-list">
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qwdLez9AzeY?si=GgGAOHkwVVEQZAXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KsCUcBK9q14?si=7GzcoUJYTIU0ilE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5xAZFU0_gas?si=k2Ehq1XommVPRSya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cu1Bugc0B60?si=QEu0eum8sdCxhm9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vqgche8ohAU?si=98CcmcdFmlgPEExw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r_n0DihYCqg?si=bgL3apRDvZrv_pWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!-- Répéter les éléments pour chaque tutoriel -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bouton pour afficher la page "Contact" -->
+
+
+    <!-- Structure de la page "Contact" -->
+    <div id="contactPage" class="floating-fullscreen">
+        <div class="contact-header">
+            <h2>Contact</h2>
+            <i class="fas fa-times" onclick="closeContactPage()"></i>
+        </div>
+        <div class="contact-content">
+            <form id="contactForm" class="contact-form">
+                <label for="fullName">Nom complet</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+    
+
+                <label for="country">Pays</label>
+                <select id="country" name="country" onchange="updateCountryCode()">
+                    <option value="">Sélectionnez un pays</option>
+                    <option value="af">Afghanistan</option>
+                    <option value="al">Albanie</option>
+                    <option value="dz">Algérie</option>
+                    <option value="as">Samoa Américaines</option>
+                    <option value="ad">Andorre</option>
+                    <option value="ao">Angola</option>
+                    <option value="ai">Anguilla</option>
+                    <option value="aq">Antarctique</option>
+                    <option value="ag">Antigua-et-Barbuda</option>
+                    <option value="ar">Argentine</option>
+                    <option value="am">Arménie</option>
+                    <option value="aw">Aruba</option>
+                    <option value="au">Australie</option>
+                    <option value="at">Autriche</option>
+                    <option value="az">Azerbaïdjan</option>
+                    <option value="bs">Bahamas</option>
+                    <option value="bh">Bahreïn</option>
+                    <option value="bd">Bangladesh</option>
+                    <option value="bb">Barbade</option>
+                    <option value="by">Biélorussie</option>
+                    <option value="be">Belgique</option>
+                    <option value="bz">Belize</option>
+                    <option value="bj">Bénin</option>
+                    <option value="bm">Bermudes</option>
+                    <option value="bt">Bhoutan</option>
+                    <option value="bo">Bolivie</option>
+                    <option value="ba">Bosnie-Herzégovine</option>
+                    <option value="bw">Botswana</option>
+                    <option value="br">Brésil</option>
+                    <option value="bn">Brunei</option>
+                    <option value="bg">Bulgarie</option>
+                    <option value="bf">Burkina Faso</option>
+                    <option value="bi">Burundi</option>
+                    <option value="cv">Cabo Verde</option>
+                    <option value="kh">Cambodge</option>
+                    <option value="cm">Cameroun</option>
+                    <option value="ca">Canada</option>
+                    <option value="ky">Îles Caïmans</option>
+                    <option value="cf">République Centrafricaine</option>
+                    <option value="td">Tchad</option>
+                    <option value="cl">Chili</option>
+                    <option value="cn">Chine</option>
+                    <option value="co">Colombie</option>
+                    <option value="km">Comores</option>
+                    <option value="cd">République Démocratique du Congo</option>
+                    <option value="cg">République du Congo</option>
+                    <option value="ck">Îles Cook</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="ci">Côte d'Ivoire</option>
+                    <option value="hr">Croatie</option>
+                    <option value="cu">Cuba</option>
+                    <option value="cy">Chypre</option>
+                    <option value="cz">République Tchèque</option>
+                    <option value="dk">Danemark</option>
+                    <option value="dj">Djibouti</option>
+                    <option value="dm">Dominique</option>
+                    <option value="do">République Dominicaine</option>
+                    <option value="ec">Équateur</option>
+                    <option value="eg">Égypte</option>
+                    <option value="sv">El Salvador</option>
+                    <option value="gq">Guinée Équatoriale</option>
+                    <option value="er">Érythrée</option>
+                    <option value="ee">Estonie</option>
+                    <option value="sz">Eswatini</option>
+                    <option value="et">Éthiopie</option>
+                    <option value="fj">Fidji</option>
+                    <option value="fi">Finlande</option>
+                    <option value="fr">France</option>
+                    <option value="gf">Guyane Française</option>
+                    <option value="pf">Polynésie Française</option>
+                    <option value="ga">Gabon</option>
+                    <option value="gm">Gambie</option>
+                    <option value="ge">Géorgie</option>
+                    <option value="de">Allemagne</option>
+                    <option value="gh">Ghana</option>
+                    <option value="gi">Gibraltar</option>
+                    <option value="gr">Grèce</option>
+                    <option value="gl">Groenland</option>
+                    <option value="gd">Grenade</option>
+                    <option value="gp">Guadeloupe</option>
+                    <option value="gu">Guam</option>
+                    <option value="gt">Guatemala</option>
+                    <option value="gn">Guinée</option>
+                    <option value="gw">Guinée-Bissau</option>
+                    <option value="gy">Guyana</option>
+                    <option value="ht">Haïti</option>
+                    <option value="hn">Honduras</option>
+                    <option value="hk">Hong Kong</option>
+                    <option value="hu">Hongrie</option>
+                    <option value="is">Islande</option>
+                    <option value="in">Inde</option>
+                    <option value="id">Indonésie</option>
+                    <option value="ir">Iran</option>
+                    <option value="iq">Irak</option>
+                    <option value="ie">Irlande</option>
+                    <option value="il">Israël</option>
+                    <option value="it">Italie</option>
+                    <option value="jm">Jamaïque</option>
+                    <option value="jp">Japon</option>
+                    <option value="jo">Jordanie</option>
+                    <option value="kz">Kazakhstan</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ki">Kiribati</option>
+                    <option value="kp">Corée du Nord</option>
+                    <option value="kr">Corée du Sud</option>
+                    <option value="kw">Koweït</option>
+                    <option value="kg">Kirghizistan</option>
+                    <option value="la">Laos</option>
+                    <option value="lv">Lettonie</option>
+                    <option value="lb">Liban</option>
+                    <option value="ls">Lesotho</option>
+                    <option value="lr">Liberia</option>
+                    <option value="ly">Libye</option>
+                    <option value="li">Liechtenstein</option>
+                    <option value="lt">Lituanie</option>
+                    <option value="lu">Luxembourg</option>
+                    <option value="mo">Macao</option>
+                    <option value="mg">Madagascar</option>
+                    <option value="mw">Malawi</option>
+                    <option value="my">Malaisie</option>
+                    <option value="mv">Maldives</option>
+                    <option value="ml">Mali</option>
+                    <option value="mt">Malte</option>
+                    <option value="mh">Îles Marshall</option>
+                    <option value="mq">Martinique</option>
+                    <option value="mr">Mauritanie</option>
+                    <option value="mu">Maurice</option>
+                    <option value="yt">Mayotte</option>
+                    <option value="mx">Mexique</option>
+                    <option value="fm">Micronésie</option>
+                    <option value="md">Moldavie</option>
+                    <option value="mc">Monaco</option>
+                    <option value="mn">Mongolie</option>
+                    <option value="me">Monténégro</option>
+                    <option value="ms">Montserrat</option>
+                    <option value="ma">Maroc</option>
+                    <option value="mz">Mozambique</option>
+                    <option value="mm">Myanmar</option>
+                    <option value="na">Namibie</option>
+                    <option value="nr">Nauru</option>
+                    <option value="np">Népal</option>
+                    <option value="nl">Pays-Bas</option>
+                    <option value="nc">Nouvelle-Calédonie</option>
+                    <option value="nz">Nouvelle-Zélande</option>
+                    <option value="ni">Nicaragua</option>
+                    <option value="ne">Niger</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="nu">Niue</option>
+                    <option value="nf">Île Norfolk</option>
+                    <option value="mk">Macédoine du Nord</option>
+                    <option value="mp">Îles Mariannes du Nord</option>
+                    <option value="no">Norvège</option>
+                    <option value="om">Oman</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="pw">Palaos</option>
+                    <option value="ps">Palestine</option>
+                    <option value="pa">Panama</option>
+                    <option value="pg">Papouasie-Nouvelle-Guinée</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Pérou</option>
+                    <option value="ph">Philippines</option>
+                    <option value="pl">Pologne</option>
+                    <option value="pt">Portugal</option>
+                    <option value="pr">Porto Rico</option>
+                    <option value="qa">Qatar</option>
+                    <option value="ro">Roumanie</option>
+                    <option value="ru">Russie</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="ws">Samoa</option>
+                    <option value="sm">Saint-Marin</option>
+                    <option value="st">Sao Tomé-et-Principe</option>
+                    <option value="sa">Arabie Saoudite</option>
+                    <option value="sn">Sénégal</option>
+                    <option value="rs">Serbie</option>
+                    <option value="sc">Seychelles</option>
+                    <option value="sl">Sierra Leone</option>
+                    <option value="sg">Singapour</option>
+                    <option value="sk">Slovaquie</option>
+                    <option value="si">Slovénie</option>
+                    <option value="sb">Îles Salomon</option>
+                    <option value="so">Somalie</option>
+                    <option value="za">Afrique du Sud</option>
+                    <option value="ss">Soudan du Sud</option>
+                    <option value="es">Espagne</option>
+                    <option value="lk">Sri Lanka</option>
+                    <option value="sd">Soudan</option>
+                    <option value="sr">Suriname</option>
+                    <option value="se">Suède</option>
+                    <option value="ch">Suisse</option>
+                    <option value="sy">Syrie</option>
+                    <option value="tw">Taïwan</option>
+                    <option value="tj">Tadjikistan</option>
+                    <option value="tz">Tanzanie</option>
+                    <option value="th">Thaïlande</option>
+                    <option value="tl">Timor oriental</option>
+                    <option value="tg">Togo</option>
+                    <option value="tk">Tokelau</option>
+                    <option value="to">Tonga</option>
+                    <option value="tt">Trinité-et-Tobago</option>
+                    <option value="tn">Tunisie</option>
+                    <option value="tr">Turquie</option>
+                    <option value="tm">Turkménistan</option>
+                    <option value="tv">Tuvalu</option>
+                    <option value="ug">Ouganda</option>
+                    <option value="ua">Ukraine</option>
+                    <option value="ae">Émirats arabes unis</option>
+                    <option value="gb">Royaume-Uni</option>
+                    <option value="us">États-Unis</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="uz">Ouzbékistan</option>
+                    <option value="vu">Vanuatu</option>
+                    <option value="va">Vatican</option>
+                    <option value="ve">Venezuela</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="eh">Sahara occidental</option>
+                    <option value="ye">Yémen</option>
+                    <option value="zm">Zambie</option>
+                    <option value="zw">Zimbabwe</option>
+                    <!-- Ajouter d'autres options de pays -->
+                </select>
+
+                <label for="language">Langue de communication</label>
+                <select id="language" name="language">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Espagnol</option>
+                    <option value="kr">Kreyol</option>
+                    <!-- Ajouter d'autres options de langue -->
+                </select>
+
+                
+                <label for="phone">Téléphone</label>
+                <div class="phone-input">
+                    <span id="countryCode">+33</span>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <label for="details">Détails</label>
+                <textarea id="details" name="details" required></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Accepter les <a href="javascript:void(0);" onclick="showTermsPage()">termes et conditions d'utilisation</a></label>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Structure de la page "Termes et Conditions" >
+    <div id="termsPage" class="floating-fullscreen">
+        <div class="terms-header">
+            <h2>Termes et Conditions</h2>
+            <i class="fas fa-times" onclick="closeTermsPage()"></i>
+        </div>
+        <div class="terms-content">
+            <p>
+                </p-->
+            <!-- Ajouter plus de contenu ici >
+        </div>
+    </div-->
+
+        <!-- Structure de la page de confirmation -->
+        <div id="confirmationPage" class="floating-fullscreen">
+            <div class="confirmation-content">
+                <img src="img/logo.png" alt="" style="width: 40px; height: 40px;">
+                <h2>Merci !</h2>
+                <p>Nous avons bien reçu votre message. Nous prendrons contact avec vous sous peu.</p>
+                <button onclick="closeConfirmationPage()">OK</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="devis-page">
+            <div class="devis-header">
+                <h2>Devis</h2>
+                <i class="fas fa-times" onclick="closeDevisPage()"></i>
+            </div>
+            <form class="devis-form">
+                <div class="form-group">
+                    <label for="full-name">Nom complet</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="country">Pays</label>
+                    <select id="country-devis" name="country" onchange="updatePhoneCodeDevis()" required>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AD">Andorra </option>
+                        <option value="AO">Angola </option>
+                        <option value="AI">Anguilla </option>
+                        <option value="AG">Antigua & Barbuda </option>
+                        <option value="AR">Argentina </option>
+                        <option value="AM">Armenia </option>
+                        <option value="AW">Aruba </option>
+                        <option value="AU">Australia </option>
+                        <option value="AT">Austria </option>
+                        <option value="AZ">Azerbaijan </option>
+                        <option value="BS">Bahamas </option>
+                        <option value="BH">Bahrain </option>
+                        <option value="BD">Bangladesh </option>
+                        <option value="BB">Barbados </option>
+                        <option value="BY">Belarus </option>
+                        <option value="BE">Belgium </option>
+                        <option value="BZ">Belize </option>
+                        <option value="BJ">Benin </option>
+                        <option value="BM">Bermuda </option>
+                        <option value="BT">Bhutan </option>
+                        <option value="BO">Bolivia </option>
+                        <option value="BA">Bosnia & Herzegovina </option>
+                        <option value="BW">Botswana </option>
+                        <option value="BR">Brazil </option>
+                        <option value="BN">Brunei Darussalam </option>
+                        <option value="BG">Bulgaria </option>
+                        <option value="BF">Burkina Faso </option>
+                        <option value="BI">Burundi </option>
+                        <option value="KH">Cambodia </option>
+                        <option value="CM">Cameroon </option>
+                        <option value="CA">Canada </option>
+                        <option value="CV">Cape Verde </option>
+                        <option value="CF">Central African Republic </option>
+                        <option value="TD">Chad </option>
+                        <option value="CL">Chile </option>
+                        <option value="CN">China </option>
+                        <option value="CO">Colombia </option>
+                        <option value="KM">Comoros </option>
+                        <option value="CG">Congo </option>
+                        <option value="CD">Congo, Democratic Republic of the </option>
+                        <option value="CR">Costa Rica </option>
+                        <option value="HR">Croatia </option>
+                        <option value="CU">Cuba </option>
+                        <option value="CY">Cyprus </option>
+                        <option value="CZ">Czech Republic </option>
+                        <option value="DK">Denmark </option>
+                        <option value="DJ">Djibouti </option>
+                        <option value="DM">Dominica </option>
+                        <option value="DO">Dominican Republic </option>
+                        <option value="EC">Ecuador </option>
+                        <option value="EG">Egypt </option>
+                        <option value="SV">El Salvador </option>
+                        <option value="GQ">Equatorial Guinea </option>
+                        <option value="ER">Eritrea </option>
+                        <option value="EE">Estonia </option>
+                        <option value="ET">Ethiopia </option>
+                        <option value="FJ">Fiji </option>
+                        <option value="FI">Finland </option>
+                        <option value="FR">France </option>
+                        <option value="GA">Gabon </option>
+                        <option value="GM">Gambia </option>
+                        <option value="GE">Georgia </option>
+                        <option value="DE">Germany </option>
+                        <option value="GH">Ghana </option>
+                        <option value="GR">Greece </option>
+                        <option value="GD">Grenada </option>
+                        <option value="GT">Guatemala </option>
+                        <option value="GN">Guinea </option>
+                        <option value="GW">Guinea-Bissau </option>
+                        <option value="GY">Guyana </option>
+                        <option value="HT">Haiti </option>
+                        <option value="HN">Honduras </option>
+                        <option value="HU">Hungary </option>
+                        <option value="IS">Iceland </option>
+                        <option value="IN">India </option>
+                        <option value="ID">Indonesia </option>
+                        <option value="IR">Iran </option>
+                        <option value="IQ">Iraq </option>
+                        <option value="IE">Ireland </option>
+                        <option value="IL">Israel </option>
+                        <option value="IT">Italy </option>
+                        <option value="JM">Jamaica </option>
+                        <option value="JP">Japan </option>
+                        <option value="JO">Jordan </option>
+                        <option value="KZ">Kazakhstan </option>
+                        <option value="KE">Kenya </option>
+                        <option value="KI">Kiribati </option>
+                        <option value="KP">Korea, North </option>
+                        <option value="KR">Korea, South </option>
+                        <option value="KW">Kuwait </option>
+                        <option value="KG">Kyrgyzstan </option>
+                        <option value="LA">Laos </option>
+                        <option value="LV">Latvia </option>
+                        <option value="LB">Lebanon </option>
+                        <option value="LS">Lesotho </option>
+                        <option value="LR">Liberia </option>
+                        <option value="LY">Libya </option>
+                        <option value="LI">Liechtenstein </option>
+                        <option value="LT">Lithuania </option>
+                        <option value="LU">Luxembourg </option>
+                        <option value="MK">Macedonia </option>
+                        <option value="MG">Madagascar </option>
+                        <option value="MW">Malawi </option>
+                        <option value="MY">Malaysia </option>
+                        <option value="MV">Maldives </option>
+                        <option value="ML">Mali </option>
+                        <option value="MT">Malta </option>
+                        <option value="MH">Marshall Islands </option>
+                        <option value="MR">Mauritania </option>
+                        <option value="MU">Mauritius </option>
+                        <option value="MX">Mexico </option>
+                        <option value="FM">Micronesia </option>
+                        <option value="MD">Moldova </option>
+                        <option value="MC">Monaco </option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro </option>
+                        <option value="MA">Morocco </option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar </option>
+                        <option value="NA">Namibia </option>
+                        <option value="NR">Nauru </option>
+                        <option value="NP">Nepal </option>
+                        <option value="NL">Netherlands </option>
+                        <option value="NZ">New Zealand </option>
+                        <option value="NI">Nicaragua </option>
+                        <option value="NE">Niger </option>
+                        <option value="NG">Nigeria </option>
+                        <option value="NO">Norway </option>
+                        <option value="OM">Oman </option>
+                        <option value="PK">Pakistan </option>
+                        <option value="PW">Palau </option>
+                        <option value="PA">Panama </option>
+                        <option value="PG">Papua New Guinea </option>
+                        <option value="PY">Paraguay </option>
+                        <option value="PE">Peru </option>
+                        <option value="PH">Philippines </option>
+                        <option value="PL">Poland </option>
+                        <option value="PT">Portugal </option>
+                        <option value="QA">Qatar </option>
+                        <option value="RO">Romania </option>
+                        <option value="RU">Russia </option>
+                        <option value="RW">Rwanda </option>
+                        <option value="KN">Saint Kitts & Nevis </option>
+                        <option value="LC">Saint Lucia </option>
+                        <option value="VC">Saint Vincent & Grenadines </option>
+                        <option value="WS">Samoa </option>
+                        <option value="SM">San Marino </option>
+                        <option value="ST">Sao Tome & Principe </option>
+                        <option value="SA">Saudi Arabia </option>
+                        <option value="SN">Senegal </option>
+                        <option value="RS">Serbia </option>
+                        <option value="SC">Seychelles </option>
+                        <option value="SL">Sierra Leone </option>
+                        <option value="SG">Singapore </option>
+                        <option value="SK">Slovakia </option>
+                        <option value="SI">Slovenia </option>
+                        <option value="SB">Solomon Islands </option>
+                        <option value="SO">Somalia </option>
+                        <option value="ZA">South Africa </option>
+                        <option value="ES">Spain </option>
+                        <option value="LK">Sri Lanka </option>
+                        <option value="SD">Sudan </option>
+                        <option value="SR">Suriname </option>
+                        <option value="SZ">Swaziland </option>
+                        <option value="SE">Sweden </option>
+                        <option value="CH">Switzerland </option>
+                        <option value="SY">Syria </option>
+                        <option value="TJ">Tajikistan </option>
+                        <option value="TZ">Tanzania </option>
+                        <option value="TH">Thailand </option>
+                        <option value="TL">Timor-Leste </option>
+                        <option value="TG">Togo </option>
+                        <option value="TO">Tonga </option>
+                        <option value="TT">Trinidad & Tobago </option>
+                        <option value="TN">Tunisia </option>
+                        <option value="TR">Turkey </option>
+                        <option value="TM">Turkmenistan </option>
+                        <option value="TV">Tuvalu </option>
+                        <option value="UG">Uganda </option>
+                        <option value="UA">Ukraine </option>
+                        <option value="AE">United Arab Emirates </option>
+                        <option value="GB">United Kingdom </option>
+                        <option value="US">United States </option>
+                        <option value="UY">Uruguay </option>
+                        <option value="UZ">Uzbekistan </option>
+                        <option value="VU">Vanuatu </option>
+                        <option value="VA">Vatican City </option>
+                        <option value="VE">Venezuela </option>
+                        <option value="VN">Vietnam </option>
+                        <option value="YE">Yemen </option>
+                        <option value="ZM">Zambia </option>
+                        <option value="ZW">Zimbabwe </option>
+                    </select>
+                    
+                </div>
+                
+                
+                
+                
+                
+                <div class="form-group">
+                    <label for="language">Langue de communication</label>
+                    <select id="language" name="language" required>
+                        <!-- Options de langue -->
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="es">Espagnol</option>
+                        <option value="kr">Kreyol</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <div class="phone-input">
+                        <span id="countryCode-devis">+33</span>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select id="service" name="service" onchange="updateSubServiceSelect()" required>
+                        <option value="">Sélectionnez un service</option>
+                        <option value="developpement-web">Développement web</option>
+                        <option value="developpement-mobile">Développement mobile</option>
+                        <option value="montage-video">Montage vidéo</option>
+                        <option value="design-graphique">Design/Graphique</option>
+                        <option value="redaction-web">Rédaction web</option>
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des sous-services -->
+                <div class="form-group" id="sub-service-group" style="display: none;">
+                    <label for="sub-service">Type de service</label>
+                    <select id="sub-service" name="sub-service" onchange="updateAdditionalSelects()">
+                        <!-- Options seront ajoutées dynamiquement par JavaScript -->
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des types de développement web -->
+                <div class="form-group" id="dev-web-types-group" style="display: none;">
+                    <label for="dev-web-type">Type de développement web</label>
+                    <select id="dev-web-type" name="dev-web-type">
+                        <option value="frontend">Front-end</option>
+                        <option value="backend">Back-end</option>
+                        <option value="fullstack">Full-stack</option>
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des types de développement mobile -->
+                <div class="form-group" id="dev-mobile-types-group" style="display: none;">
+                    <label for="dev-mobile-type">Type de développement mobile</label>
+                    <select id="dev-mobile-type" name="dev-mobile-type">
+                        <option value="ios">iOS</option>
+                        <option value="android">Android</option>
+                        <option value="cross-platform">Cross-platform</option>
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des types de montage vidéo -->
+                <div class="form-group" id="video-montage-types-group" style="display: none;">
+                    <label for="video-montage-type">Type de montage vidéo</label>
+                    <select id="video-montage-type" name="video-montage-type">
+                        <option value="publicite">Publicité</option>
+                        <option value="promotionnel">Montage promotionnel</option>
+                        <option value="artistique">Montage artistique</option>
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des types de design/graphique -->
+                <div class="form-group" id="design-types-group" style="display: none;">
+                    <label for="design-type">Type de design/graphique</label>
+                    <select id="design-type" name="design-type">
+                        <option value="logo">Logo Design</option>
+                        <option value="ui-ux">UI/UX Design</option>
+                        <option value="illustration">Illustration</option>
+                    </select>
+                </div>
+            
+                <!-- Sélection dynamique des types de rédaction web -->
+                <div class="form-group" id="redaction-types-group" style="display: none;">
+                    <label for="redaction-type">Type de rédaction web</label>
+                    <select id="redaction-type" name="redaction-type">
+                        <option value="seo">SEO</option>
+                        <option value="marketing-contenu">Marketing de contenu</option>
+                        <option value="copywriting">Copywriting</option>
+                    </select>
+                </div>
+            
+                <!-- Contiendra les autres selects dynamiques -->
+                <div id="additional-selects"></div>
+            
+            
+                <div class="form-group">
+                    <label for="details">Détails</label>
+                    <textarea id="details" name="details" required></textarea>
+                </div>
+                <div class="form-group a">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Accepter les <a href="javascript:void(0);" onclick="showTermsPage()" style="color: rgb(0, 168, 0);">termes et conditions d'utilisation</a>
+                    </label>
+                </div>
+                <button type="submit" onclick="handleSubmit()">Envoyer</button>
+            </form>
+        </div>
+
+
+        <div class="confirmation-page">               
+            <img src="img/logo.png" alt="" style="width: 40px; height: 40px;">
+            <h3>Comfirmation de demande</h3>
+            <p>Nous avons bien reçu votre demande. Nous vous contacterons sous peu.</p>
+            <button onclick="closeConfirmationPage()">OK</button>
+            
+        </div>
+    
+
+
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+    <!-- Page de commentaires en float -->
+    <div id="commentsPage" class="float-page">
+        <div class="comments">
+            <div class="comments-header">
+                <h2>Commentaire</h2>
+                <i class="fas fa-times" onclick="closeCommentsPage()"></i>
+            </div>
+            <div class="comments-content">
+                <div class="comment-item">
+                    <div class="comment-background">
+                        <img src="flag/germany.png" alt="Avatar" class="avatar">
+                        <h3>Marie Dupont</h3>
+                        <p>Je tiens à remercier toute l'équipe pour le travail exceptionnel réalisé sur notre site web. La nouvelle interface est intuitive et magnifique. Nous avons déjà reçu des retours positifs de nos clients ! Excellent travail, continuez comme ça !</p>
+                        <div class="comment-footer">
+                            <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                            <span>0</span>
+                            <a href="javascript:void(0);" onclick="openReplyPage(this)">Répondre</a>
+                        </div>
+                    </div>
+                    <div class="replies">
+                        <!-- Réponses seront ajoutées ici -->
+                    </div>
+                </div>
+
+                <div class="comment-item">
+                    <div class="comment-background">
+                        <img src="flag/united-states.png" alt="Avatar" class="avatar">
+                        <h3>Jean Martin</h3>
+                        <p>J'ai récemment travaillé avec l'équipe pour une application mobile et je suis extrêmement satisfait du résultat. Le design est moderne et les fonctionnalités sont parfaitement adaptées à nos besoins. Merci pour votre professionnalisme et votre écoute.</p>
+                        <div class="comment-footer">
+                            <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                            <span>0</span>
+                            <a href="javascript:void(0);" onclick="openReplyPage(this)">Répondre</a>
+                        </div>
+                    </div>
+                    <div class="replies">
+                        <!-- Réponses seront ajoutées ici -->
+                    </div>
+                </div>
+                <!-- Ajoutez plus d'éléments de commentaire ici -->
+            </div>
+        </div>
+        <button class="add-comment-btn" onclick="openAddCommentPage()">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <!-- Page d'ajout de commentaire en float -->
+    <div id="addCommentPage" class="float-page">
+        <div class="comments">
+            <div class="add-comment-header">
+                <i class="fas fa-times" onclick="closeAddCommentPage()"></i>
+                <button onclick="publishComment()">Publier</button>
+            </div>
+            <div class="add-comment-content">
+                <img src="flag/globe.png" alt="Avatar" class="avatar" id="commentAvatar">
+                <i class="fas fa-pencil-alt" onclick="openAvatarSelectionPage()"></i>
+                <div class="form-group">
+                    <label for="commentName">Nom</label>
+                    <input type="text" id="commentName" name="commentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="commentDescription">Description</label>
+                    <textarea id="commentDescription" name="commentDescription" required></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Page de réponse en float -->
+    <div id="replyPage" class="float-page">
+        <div class="comments">
+            <div class="add-comment-header">
+                <i class="fas fa-times" onclick="closeReplyPage()"></i>
+                <button onclick="publishReply()">Répondre</button>
+            </div>
+            <div class="add-comment-content">
+                <img src="img/default-avatar.png" alt="Avatar" class="avatar" id="replyAvatar">
+                <i class="fas fa-pencil-alt" onclick="openAvatarSelectionPage('reply')"></i>
+                <div class="form-group">
+                    <label for="replyName">Nom</label>
+                    <input type="text" id="replyName" name="replyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="replyDescription">Description</label>
+                    <textarea id="replyDescription" name="replyDescription" required></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Page de sélection d'avatar en float -->
+    <div id="avatarSelectionPage" class="float-page">
+        <div class="comments">
+            <div class="avatar-selection-header">
+                <h2>Selectionner un avatar</h2>
+                <i class="fas fa-times" onclick="closeAvatarSelectionPage()"></i>
+            </div>
+            <div class="avatar-selection-content">
+                <div class="avatar-grid">
+                    <img src="flag/cameroon.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/canada.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/chile.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/china.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/colombia.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/ecuador.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/england.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/france.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/germany.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="img/avatar4.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/globe.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/jamaica.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/japan.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/lithuania.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/senegal.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/portugal.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/tuvalu.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/spain.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/united-kingdom.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/united-states.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <img src="flag/world.png" alt="Avatar" class="avatar-option" onclick="selectAvatar(this)">
+                    <!-- Ajoutez plus d'avatars ici -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        window.addEventListener('load', function() {
+            // Display the splash screen for 3 seconds
+            setTimeout(function() {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 3000);
+        });
+
+
+
+
+
+
+        
+// script.js
+
+    function toggleMenu() {
+        var floatingMenu = document.getElementById('floatingMenu');
+        floatingMenu.style.right = floatingMenu.style.right === '0px' ? '-300px' : '0px';
+    }
+
+
+
+    // script.js
+
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-slide');
+        const totalImages = images.length;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+            showImage(currentImageIndex);
+        }
+
+        let zoomLevel = 1;
+
+        function zoomIn() {
+            zoomLevel += 0.1;
+            document.querySelector('.image-container').style.transform = `scale(${zoomLevel})`;
+        }
+
+        function zoomOut() {
+            zoomLevel = Math.max(1, zoomLevel - 0.1);
+            document.querySelector('.image-container').style.transform = `scale(${zoomLevel})`;
+        }
+
+        function openFloatingPage() {
+            document.getElementById('floatingPage').classList.add('active');
+            showImage(currentImageIndex);
+        }
+
+        function closeFloatingPage() {
+            document.getElementById('floatingPage').classList.remove('active');
+        }
+
+        document.querySelector('.next-btn').addEventListener('click', nextImage);
+        document.querySelector('.prev-btn').addEventListener('click', prevImage);
+        document.querySelector('.zoom-in-btn').addEventListener('click', zoomIn);
+        document.querySelector('.zoom-out-btn').addEventListener('click', zoomOut);
+
+
+
+
+
+
+        // script.js
+
+        function openProjectsPage() {
+            var projectsPage = document.getElementById('projectsPage');
+            projectsPage.style.display = 'flex';
+        }
+
+        function closeProjectsPage() {
+            var projectsPage = document.getElementById('projectsPage');
+            projectsPage.style.display = 'none';
+        }
+                
+
+    
+// script.js
+
+        // script.js
+
+        // script.js
+
+        function openCompetencesPage() {
+            var competencesPage = document.getElementById('competencesPage');
+            competencesPage.style.display = 'flex';
+        }
+
+        function closeCompetencesPage() {
+            var competencesPage = document.getElementById('competencesPage');
+            competencesPage.style.display = 'none';
+        }
+
+
+
+
+        
+
+
+        function showBlogsPage() {
+    document.getElementById('blogsPage').style.display = 'block';
+}
+
+function closeBlogsPage() {
+    document.getElementById('blogsPage').style.display = 'none';
+}
+
+function showAddBlogPage() {
+    document.getElementById('addBlogPage').style.display = 'block';
+}
+
+function closeAddBlogPage() {
+    document.getElementById('addBlogPage').style.display = 'none';
+}
+
+function showAvatarPage() {
+    document.getElementById('avatarPage').style.display = 'block';
+}
+
+function closeAvatarPage() {
+    document.getElementById('avatarPage').style.display = 'none';
+}
+
+function selectAvatar(avatarSrc) {
+    document.querySelector('.avatar-section .avatar').src = avatarSrc;
+    closeAvatarPage();
+}
+
+function showTermsPage() {
+    document.getElementById('termsPage').style.display = 'block';
+}
+
+function closeTermsPage() {
+    document.getElementById('termsPage').style.display = 'none';
+}
+
+function previewFile() {
+    const file = document.getElementById('fileInput').files[0];
+    const preview = document.getElementById('preview');
+    const reader = new FileReader();
+
+    reader.addEventListener('load', function () {
+        const media = document.createElement(file.type.startsWith('video') ? 'video' : 'img');
+        media.src = reader.result;
+        if (file.type.startsWith('video')) {
+            media.controls = true;
+        }
+        preview.innerHTML = '';
+        preview.appendChild(media);
+    });
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+}
+
+function publishBlog() {
+    const title = document.getElementById('titleInput').value;
+    const description = document.getElementById('descriptionInput').value;
+    const file = document.getElementById('fileInput').files[0];
+    const termsAccepted = document.getElementById('termsCheckbox').checked;
+
+    if (!title || !description || !file || !termsAccepted) {
+        alert('Veuillez remplir tous les champs et accepter les termes et conditions.');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.addEventListener('load', function () {
+        const blogsList = document.querySelector('.blogs-list');
+        const blogItem = document.createElement('div');
+        blogItem.classList.add('blog-item');
+
+        const media = document.createElement(file.type.startsWith('video') ? 'video' : 'img');
+        media.src = reader.result;
+        if (file.type.startsWith('video')) {
+            media.controls = true;
+        }
+        blogItem.appendChild(media);
+
+        const blogInfo = document.createElement('div');
+        blogInfo.classList.add('blog-info');
+
+        const avatar = document.querySelector('.avatar-section .avatar').cloneNode();
+        blogInfo.appendChild(avatar);
+
+        const h3 = document.createElement('h3');
+        h3.textContent = title;
+        blogInfo.appendChild(h3);
+
+        const p = document.createElement('p');
+        p.textContent = description;
+        blogInfo.appendChild(p);
+
+        const blogFooter = document.createElement('div');
+        blogFooter.classList.add('blog-footer');
+
+        const a = document.createElement('a');
+        a.href = 'javascript:void(0);';
+        a.innerHTML = '<i class="fas fa-arrow-right"></i> Consulter';
+        blogFooter.appendChild(a);
+
+        const likeCounter = document.createElement('div');
+        likeCounter.classList.add('like-counter');
+        likeCounter.innerHTML = '<i class="fas fa-heart" onclick="increaseLike(this)"></i><span>0</span>';
+        blogFooter.appendChild(likeCounter);
+
+        blogInfo.appendChild(blogFooter);
+        blogItem.appendChild(blogInfo);
+        blogsList.appendChild(blogItem);
+
+        closeAddBlogPage();
+    });
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+}
+
+function increaseLike(element) {
+    let countSpan = element.nextElementSibling;
+    let currentCount = parseInt(countSpan.innerText);
+    countSpan.innerText = currentCount + 1;
+    element.style.color = 'red';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Fonction pour afficher la page "Mon Équipe"
+        function showTeamPage() {
+            document.getElementById('teamPage').style.display = 'block';
+            // Ajouter ici le code pour charger les données de l'équipe dynamiquement si nécessaire
+        }
+
+        // Fonction pour fermer la page "Mon Équipe"
+        function closeTeamPage() {
+            document.getElementById('teamPage').style.display = 'none';
+        }
+
+
+
+
+
+        // Fonction pour afficher la page "Tutoriel"
+// Fonction pour afficher la page "Tutoriel"
+        function showTutorialPage() {
+            document.getElementById('tutorialPage').style.display = 'block';
+        }
+
+        // Fonction pour fermer la page "Tutoriel"
+        function closeTutorialPage() {
+            document.getElementById('tutorialPage').style.display = 'none';
+        }
+
+
+
+
+
+
+
+
+// Fonction pour afficher la page "Contact" et gérer l'envoi du formulaire
+
+
+
+
+
+// Fonction pour afficher la page "Contact"
+        function showContactPage() {
+            document.getElementById('contactPage').style.display = 'block';
+
+            // Écouteur d'événement pour soumettre le formulaire
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Empêche le comportement de soumission par défaut
+
+                // Traitez ici l'envoi du formulaire (par exemple, envoyez les données à un serveur, etc.)
+                // Vérifie que l'un des deux champs (email ou téléphone) est rempli
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+
+                if (!email && !phone) {
+                    alert('Veuillez remplir soit l\'email soit le numéro de téléphone.');
+                    return; // Empêche la soumission du formulaire
+                }
+                // Après avoir traité l'envoi, fermez la page de contact et affichez la page de confirmation
+                closeContactPage();
+                showConfirmationPage();
+            });
+        }
+
+        // Fonction pour fermer la page "Contact"
+        function closeContactPage() {
+            document.getElementById('contactPage').style.display = 'none';
+        }
+
+
+
+        // Fonction pour afficher la page de confirmation
+        function showConfirmationPage() {
+            document.getElementById('confirmationPage').style.display = 'block';
+        }
+
+        // Fonction pour fermer la page de confirmation
+        function closeConfirmationPage() {
+            document.getElementById('confirmationPage').style.display = 'none';
+        }
+
+
+        // Fonction pour afficher la page "Termes et Conditions"
+        function showTermsPage() {
+            document.getElementById('termsPage').style.display = 'block';
+        }
+
+        // Fonction pour fermer la page "Termes et Conditions"
+        function closeTermsPage() {
+            document.getElementById('termsPage').style.display = 'none';
+        }
+
+        // Fonction pour mettre à jour le code de pays en fonction de la sélection
+        function updateCountryCode() {
+            var country = document.getElementById('country').value;
+            var countryCode = "";
+
+            switch(country) {
+                case "af": // Afghanistan
+                    countryCode = "+93";
+                    break;
+                case "al": // Albania
+                    countryCode = "+355";
+                    break;
+                case "dz": // Algeria
+                    countryCode = "+213";
+                    break;
+                case "as": // American Samoa
+                    countryCode = "+1-684";
+                    break;
+                case "ad": // Andorra
+                    countryCode = "+376";
+                    break;
+                case "ao": // Angola
+                    countryCode = "+244";
+                    break;
+                case "ai": // Anguilla
+                    countryCode = "+1-264";
+                    break;
+                case "ag": // Antigua and Barbuda
+                    countryCode = "+1-268";
+                    break;
+                case "ar": // Argentina
+                    countryCode = "+54";
+                    break;
+                case "am": // Armenia
+                    countryCode = "+374";
+                    break;
+                case "aw": // Aruba
+                    countryCode = "+297";
+                    break;
+                case "au": // Australia
+                    countryCode = "+61";
+                    break;
+                case "at": // Austria
+                    countryCode = "+43";
+                    break;
+                case "az": // Azerbaijan
+                    countryCode = "+994";
+                    break;
+                case "bs": // Bahamas
+                    countryCode = "+1-242";
+                    break;
+                case "bh": // Bahrain
+                    countryCode = "+973";
+                    break;
+                case "bd": // Bangladesh
+                    countryCode = "+880";
+                    break;
+                case "bb": // Barbados
+                    countryCode = "+1-246";
+                    break;
+                case "by": // Belarus
+                    countryCode = "+375";
+                    break;
+                case "be": // Belgium
+                    countryCode = "+32";
+                    break;
+                case "bz": // Belize
+                    countryCode = "+501";
+                    break;
+                case "bj": // Benin
+                    countryCode = "+229";
+                    break;
+                case "bm": // Bermuda
+                    countryCode = "+1-441";
+                    break;
+                case "bt": // Bhutan
+                    countryCode = "+975";
+                    break;
+                case "bo": // Bolivia
+                    countryCode = "+591";
+                    break;
+                case "ba": // Bosnia and Herzegovina
+                    countryCode = "+387";
+                    break;
+                case "bw": // Botswana
+                    countryCode = "+267";
+                    break;
+                case "br": // Brazil
+                    countryCode = "+55";
+                    break;
+                case "io": // British Indian Ocean Territory
+                    countryCode = "+246";
+                    break;
+                case "vg": // British Virgin Islands
+                    countryCode = "+1-284";
+                    break;
+                case "bn": // Brunei
+                    countryCode = "+673";
+                    break;
+                case "bg": // Bulgaria
+                    countryCode = "+359";
+                    break;
+                case "bf": // Burkina Faso
+                    countryCode = "+226";
+                    break;
+                case "bi": // Burundi
+                    countryCode = "+257";
+                    break;
+                case "kh": // Cambodia
+                    countryCode = "+855";
+                    break;
+                case "cm": // Cameroon
+                    countryCode = "+237";
+                    break;
+                case "ca": // Canada
+                    countryCode = "+1";
+                    break;
+                case "cv": // Cape Verde
+                    countryCode = "+238";
+                    break;
+                case "ky": // Cayman Islands
+                    countryCode = "+1-345";
+                    break;
+                case "cf": // Central African Republic
+                    countryCode = "+236";
+                    break;
+                case "td": // Chad
+                    countryCode = "+235";
+                    break;
+                case "cl": // Chile
+                    countryCode = "+56";
+                    break;
+                case "cn": // China
+                    countryCode = "+86";
+                    break;
+                case "cx": // Christmas Island
+                    countryCode = "+61";
+                    break;
+                case "cc": // Cocos Islands
+                    countryCode = "+61";
+                    break;
+                case "co": // Colombia
+                    countryCode = "+57";
+                    break;
+                case "km": // Comoros
+                    countryCode = "+269";
+                    break;
+                case "ck": // Cook Islands
+                    countryCode = "+682";
+                    break;
+                case "cr": // Costa Rica
+                    countryCode = "+506";
+                    break;
+                case "hr": // Croatia
+                    countryCode = "+385";
+                    break;
+                case "cu": // Cuba
+                    countryCode = "+53";
+                    break;
+                case "cw": // Curacao
+                    countryCode = "+599";
+                    break;
+                case "cy": // Cyprus
+                    countryCode = "+357";
+                    break;
+                case "cz": // Czech Republic
+                    countryCode = "+420";
+                    break;
+                case "cd": // Democratic Republic of the Congo
+                    countryCode = "+243";
+                    break;
+                case "dk": // Denmark
+                    countryCode = "+45";
+                    break;
+                case "dj": // Djibouti
+                    countryCode = "+253";
+                    break;
+                case "dm": // Dominica
+                    countryCode = "+1-767";
+                    break;
+                case "do": // Dominican Republic
+                    countryCode = "+1-809"; // Multiple codes for different regions
+                    break;
+                case "tl": // East Timor
+                    countryCode = "+670";
+                    break;
+                case "ec": // Ecuador
+                    countryCode = "+593";
+                    break;
+                case "eg": // Egypt
+                    countryCode = "+20";
+                    break;
+                case "sv": // El Salvador
+                    countryCode = "+503";
+                    break;
+                case "gq": // Equatorial Guinea
+                    countryCode = "+240";
+                    break;
+                case "er": // Eritrea
+                    countryCode = "+291";
+                    break;
+                case "ee": // Estonia
+                    countryCode = "+372";
+                    break;
+                case "et": // Ethiopia
+                    countryCode = "+251";
+                    break;
+                case "fk": // Falkland Islands
+                    countryCode = "+500";
+                    break;
+                case "fo": // Faroe Islands
+                    countryCode = "+298";
+                    break;
+                case "fj": // Fiji
+                    countryCode = "+679";
+                    break;
+                case "fi": // Finland
+                    countryCode = "+358";
+                    break;
+                case "fr": // France
+                    countryCode = "+33";
+                    break;
+                case "gf": // French Guiana
+                    countryCode = "+594";
+                    break;
+                case "pf": // French Polynesia
+                    countryCode = "+689";
+                    break;
+                case "ga": // Gabon
+                    countryCode = "+241";
+                    break;
+                case "gm": // Gambia
+                    countryCode = "+220";
+                    break;
+                case "ge": // Georgia
+                    countryCode = "+995";
+                    break;
+                case "de": // Germany
+                    countryCode = "+49";
+                    break;
+                case "gh": // Ghana
+                    countryCode = "+233";
+                    break;
+                case "gi": // Gibraltar
+                    countryCode = "+350";
+                    break;
+                case "gr": // Greece
+                    countryCode = "+30";
+                    break;
+                case "gl": // Greenland
+                    countryCode = "+299";
+                    break;
+                case "gd": // Grenada
+                    countryCode = "+1-473";
+                    break;
+                case "gp": // Guadeloupe
+                    countryCode = "+590";
+                    break;
+                case "gu": // Guam
+                    countryCode = "+1-671";
+                    break;
+                case "gt": // Guatemala
+                    countryCode = "+502";
+                    break;
+                case "gg": // Guernsey
+                    countryCode = "+44-1481";
+                    break;
+                case "gn": // Guinea
+                    countryCode = "+224";
+                    break;
+                case "gw": // Guinea-Bissau
+                    countryCode = "+245";
+                    break;
+                case "gy": // Guyana
+                    countryCode = "+592";
+                    break;
+                case "ht": // Haiti
+                    countryCode = "+509";
+                    break;
+                case "hn": // Honduras
+                    countryCode = "+504";
+                    break;
+                case "hk": // Hong Kong
+                    countryCode = "+852";
+                    break;
+                case "hu": // Hungary
+                    countryCode = "+36";
+                    break;
+                case "is": // Iceland
+                    countryCode = "+354";
+                    break;
+                case "in": // India
+                    countryCode = "+91";
+                    break;
+                case "id": // Indonesia
+                    countryCode = "+62";
+                    break;
+                case "ir": // Iran
+                    countryCode = "+98";
+                    break;
+                case "iq": // Iraq
+                    countryCode = "+964";
+                    break;
+                case "ie": // Ireland
+                    countryCode = "+353";
+                    break;
+                case "im": // Isle of Man
+                    countryCode = "+44-1624";
+                    break;
+                case "il": // Israel
+                    countryCode = "+972";
+                    break;
+                case "it": // Italy
+                    countryCode = "+39";
+                    break;
+                case "ci": // Ivory Coast
+                    countryCode = "+225";
+                    break;
+                case "jm": // Jamaica
+                    countryCode = "+1-876";
+                    break;
+                case "jp": // Japan
+                    countryCode = "+81";
+                    break;
+                case "je": // Jersey
+                    countryCode = "+44-1534";
+                    break;
+                case "jo": // Jordan
+                    countryCode = "+962";
+                    break;
+                case "kz": // Kazakhstan
+                    countryCode = "+7";
+                    break;
+                case "ke": // Kenya
+                    countryCode = "+254";
+                    break;
+                case "ki": // Kiribati
+                    countryCode = "+686";
+                    break;
+                case "xk": // Kosovo
+                    countryCode = "+383";
+                    break;
+                case "kw": // Kuwait
+                    countryCode = "+965";
+                    break;
+                case "kg": // Kyrgyzstan
+                    countryCode = "+996";
+                    break;
+                case "la": // Laos
+                    countryCode = "+856";
+                    break;
+                case "lv": // Latvia
+                    countryCode = "+371";
+                    break;
+                case "lb": // Lebanon
+                    countryCode = "+961";
+                    break;
+                case "ls": // Lesotho
+                    countryCode = "+266";
+                    break;
+                case "lr": // Liberia
+                    countryCode = "+231";
+                    break;
+                case "ly": // Libya
+                    countryCode = "+218";
+                    break;
+                case "li": // Liechtenstein
+                    countryCode = "+423";
+                    break;
+                case "lt": // Lithuania
+                    countryCode = "+370";
+                    break;
+                case "lu": // Luxembourg
+                    countryCode = "+352";
+                    break;
+                case "mo": // Macau
+                    countryCode = "+853";
+                    break;
+                case "mk": // Macedonia
+                    countryCode = "+389";
+                    break;
+                case "mg": // Madagascar
+                    countryCode = "+261";
+                    break;
+                case "mw": // Malawi
+                    countryCode = "+265";
+                    break;
+                case "my": // Malaysia
+                    countryCode = "+60";
+                    break;
+                case "mv": // Maldives
+                    countryCode = "+960";
+                    break;
+                case "ml": // Mali
+                    countryCode = "+223";
+                    break;
+                case "mt": // Malta
+                    countryCode = "+356";
+                    break;
+                case "mh": // Marshall Islands
+                    countryCode = "+692";
+                    break;
+                case "mq": // Martinique
+                    countryCode = "+596";
+                    break;
+                case "mr": // Mauritania
+                    countryCode = "+222";
+                    break;
+                case "mu": // Mauritius
+                    countryCode = "+230";
+                    break;
+                case "yt": // Mayotte
+                    countryCode = "+262";
+                    break;
+                case "mx": // Mexico
+                    countryCode = "+52";
+                    break;
+                case "fm": // Micronesia
+                    countryCode = "+691";
+                    break;
+                case "md": // Moldova
+                    countryCode = "+373";
+                    break;
+                case "mc": // Monaco
+                    countryCode = "+377";
+                    break;
+                case "mn": // Mongolia
+                    countryCode = "+976";
+                    break;
+                case "me": // Montenegro
+                    countryCode = "+382";
+                    break;
+                case "ms": // Montserrat
+                    countryCode = "+1-664";
+                    break;
+                case "ma": // Morocco
+                    countryCode = "+212";
+                    break;
+                case "mz": // Mozambique
+                    countryCode = "+258";
+                    break;
+                case "mm": // Myanmar
+                    countryCode = "+95";
+                    break;
+                case "na": // Namibia
+                    countryCode = "+264";
+                    break;
+                case "nr": // Nauru
+                    countryCode = "+674";
+                    break;
+                case "np": // Nepal
+                    countryCode = "+977";
+                    break;
+                case "nl": // Netherlands
+                    countryCode = "+31";
+                    break;
+                case "nc": // New Caledonia
+                    countryCode = "+687";
+                    break;
+                case "nz": // New Zealand
+                    countryCode = "+64";
+                    break;
+                case "ni": // Nicaragua
+                    countryCode = "+505";
+                    break;
+                case "ne": // Niger
+                    countryCode = "+227";
+                    break;
+                case "ng": // Nigeria
+                    countryCode = "+234";
+                    break;
+                case "nu": // Niue
+                    countryCode = "+683";
+                    break;
+                case "nf": // Norfolk Island
+                    countryCode = "+672";
+                    break;
+                case "kp": // North Korea
+                    countryCode = "+850";
+                    break;
+                case "mp": // Northern Mariana Islands
+                    countryCode = "+1-670";
+                    break;
+                case "no": // Norway
+                    countryCode = "+47";
+                    break;
+                case "om": // Oman
+                    countryCode = "+968";
+                    break;
+                case "pk": // Pakistan
+                    countryCode = "+92";
+                    break;
+                case "pw": // Palau
+                    countryCode = "+680";
+                    break;
+                case "ps": // Palestine
+                    countryCode = "+970";
+                    break;
+                case "pa": // Panama
+                    countryCode = "+507";
+                    break;
+                case "pg": // Papua New Guinea
+                    countryCode = "+675";
+                    break;
+                case "py": // Paraguay
+                    countryCode = "+595";
+                    break;
+                case "pe": // Peru
+                    countryCode = "+51";
+                    break;
+                case "ph": // Philippines
+                    countryCode = "+63";
+                    break;
+                case "pn": // Pitcairn Islands
+                    countryCode = "+64";
+                    break;
+                case "pl": // Poland
+                    countryCode = "+48";
+                    break;
+                case "pt": // Portugal
+                    countryCode = "+351";
+                    break;
+                case "pr": // Puerto Rico
+                    countryCode = "+1-787"; // Multiple codes for different regions
+                    break;
+                case "qa": // Qatar
+                    countryCode = "+974";
+                    break;
+                case "cg": // Republic of the Congo
+                    countryCode = "+242";
+                    break;
+                case "re": // Reunion
+                    countryCode = "+262";
+                    break;
+                case "ro": // Romania
+                    countryCode = "+40";
+                    break;
+                case "ru": // Russia
+                    countryCode = "+7";
+                    break;
+                case "rw": // Rwanda
+                    countryCode = "+250";
+                    break;
+                case "bl": // Saint Barthelemy
+                    countryCode = "+590";
+                    break;
+                case "sh": // Saint Helena
+                    countryCode = "+290";
+                    break;
+                case "kn": // Saint Kitts and Nevis
+                    countryCode = "+1-869";
+                    break;
+                case "lc": // Saint Lucia
+                    countryCode = "+1-758";
+                    break;
+                case "mf": // Saint Martin
+                    countryCode = "+590";
+                    break;
+                case "pm": // Saint Pierre and Miquelon
+                    countryCode = "+508";
+                    break;
+                case "vc": // Saint Vincent and the Grenadines
+                    countryCode = "+1-784";
+                    break;
+                case "ws": // Samoa
+                    countryCode = "+685";
+                    break;
+                case "sm": // San Marino
+                    countryCode = "+378";
+                    break;
+                case "st": // Sao Tome and Principe
+                    countryCode = "+239";
+                    break;
+                case "sa": // Saudi Arabia
+                    countryCode = "+966";
+                    break;
+                case "sn": // Senegal
+                    countryCode = "+221";
+                    break;
+                case "rs": // Serbia
+                    countryCode = "+381";
+                    break;
+                case "sc": // Seychelles
+                    countryCode = "+248";
+                    break;
+                case "sl": // Sierra Leone
+                    countryCode = "+232";
+                    break;
+                case "sg": // Singapore
+                    countryCode = "+65";
+                    break;
+                case "sx": // Sint Maarten
+                    countryCode = "+1-721";
+                    break;
+                case "sk": // Slovakia
+                    countryCode = "+421";
+                    break;
+                case "si": // Slovenia
+                    countryCode = "+386";
+                    break;
+                case "sb": // Solomon Islands
+                    countryCode = "+677";
+                    break;
+                case "so": // Somalia
+                    countryCode = "+252";
+                    break;
+                case "za": // South Africa
+                    countryCode = "+27";
+                    break;
+                case "kr": // South Korea
+                    countryCode = "+82";
+                    break;
+                case "ss": // South Sudan
+                    countryCode = "+211";
+                    break;
+                case "es": // Spain
+                    countryCode = "+34";
+                    break;
+                case "lk": // Sri Lanka
+                    countryCode = "+94";
+                    break;
+                case "sd": // Sudan
+                    countryCode = "+249";
+                    break;
+                case "sr": // Suriname
+                    countryCode = "+597";
+                    break;
+                case "sj": // Svalbard and Jan Mayen
+                    countryCode = "+47";
+                    break;
+                case "sz": // Swaziland
+                    countryCode = "+268";
+                    break;
+                case "se": // Sweden
+                    countryCode = "+46";
+                    break;
+                case "ch": // Switzerland
+                    countryCode = "+41";
+                    break;
+                case "sy": // Syria
+                    countryCode = "+963";
+                    break;
+                case "tw": // Taiwan
+                    countryCode = "+886";
+                    break;
+                case "tj": // Tajikistan
+                    countryCode = "+992";
+                    break;
+                case "tz": // Tanzania
+                    countryCode = "+255";
+                    break;
+                case "th": // Thailand
+                    countryCode = "+66";
+                    break;
+                case "tg": // Togo
+                    countryCode = "+228";
+                    break;
+                case "tk": // Tokelau
+                    countryCode = "+690";
+                    break;
+                case "to": // Tonga
+                    countryCode = "+676";
+                    break;
+                case "tt": // Trinidad and Tobago
+                    countryCode = "+1-868";
+                    break;
+                case "tn": // Tunisia
+                    countryCode = "+216";
+                    break;
+                case "tr": // Turkey
+                    countryCode = "+90";
+                    break;
+                case "tm": // Turkmenistan
+                    countryCode = "+993";
+                    break;
+                case "tc": // Turks and Caicos Islands
+                    countryCode = "+1-649";
+                    break;
+                case "tv": // Tuvalu
+                    countryCode = "+688";
+                    break;
+                case "vi": // U.S. Virgin Islands
+                    countryCode = "+1-340";
+                    break;
+                case "ug": // Uganda
+                    countryCode = "+256";
+                    break;
+                case "ua": // Ukraine
+                    countryCode = "+380";
+                    break;
+                case "ae": // United Arab Emirates
+                    countryCode = "+971";
+                    break;
+                case "gb": // United Kingdom
+                    countryCode = "+44";
+                    break;
+                case "us": // United States
+                    countryCode = "+1";
+                    break;
+                case "uy": // Uruguay
+                    countryCode = "+598";
+                    break;
+                case "uz": // Uzbekistan
+                    countryCode = "+998";
+                    break;
+                case "vu": // Vanuatu
+                    countryCode = "+678";
+                    break;
+                case "va": // Vatican
+                    countryCode = "+379";
+                    break;
+                case "ve": // Venezuela
+                    countryCode = "+58";
+                    break;
+                case "vn": // Vietnam
+                    countryCode = "+84";
+                    break;
+                case "wf": // Wallis and Futuna
+                    countryCode = "+681";
+                    break;
+                case "eh": // Western Sahara
+                    countryCode = "+212";
+                    break;
+                case "ye": // Yemen
+                    countryCode = "+967";
+                    break;
+                case "zm": // Zambia
+                    countryCode = "+260";
+                    break;
+                case "zw": // Zimbabwe
+                    countryCode = "+263";
+                    break;
+                default:
+                    countryCode = "";
+            }
+
+
+            document.getElementById('countryCode').textContent = countryCode;
+        }
+
+
+
+
+
+
+
+
+        // Fonction pour ouvrir la page de commentaires
+        function openCommentsPage() {
+            document.getElementById('commentsPage').style.display = 'flex';
+        }
+
+        // Fonction pour fermer la page de commentaires
+        function closeCommentsPage() {
+            document.getElementById('commentsPage').style.display = 'none';
+        }
+
+        // Fonction pour ouvrir la page d'ajout de commentaire
+        function openAddCommentPage() {
+            document.getElementById('addCommentPage').style.display = 'flex';
+        }
+
+        // Fonction pour fermer la page d'ajout de commentaire
+        function closeAddCommentPage() {
+            document.getElementById('addCommentPage').style.display = 'none';
+        }
+
+        // Fonction
+        // Fonction pour ouvrir la page de sélection d'avatar
+        function openAvatarSelectionPage(from) {
+            document.getElementById('avatarSelectionPage').style.display = 'flex';
+            if (from === 'reply') {
+                document.getElementById('avatarSelectionPage').setAttribute('data-from', 'reply');
+            } else {
+                document.getElementById('avatarSelectionPage').removeAttribute('data-from');
+            }
+        }
+
+        // Fonction pour fermer la page de sélection d'avatar
+        function closeAvatarSelectionPage() {
+            document.getElementById('avatarSelectionPage').style.display = 'none';
+        }
+
+        // Fonction pour sélectionner un avatar
+        function selectAvatar(element) {
+            const avatarSrc = element.src;
+            if (document.getElementById('avatarSelectionPage').getAttribute('data-from') === 'reply') {
+                document.getElementById('replyAvatar').src = avatarSrc;
+            } else {
+                document.getElementById('commentAvatar').src = avatarSrc;
+            }
+            closeAvatarSelectionPage();
+        }
+
+        // Fonction pour publier un commentaire
+        function publishComment() {
+            const commentName = document.getElementById('commentName').value;
+            const commentDescription = document.getElementById('commentDescription').value;
+
+            // Créer un nouvel élément de commentaire
+            const commentItem = document.createElement('div');
+            commentItem.classList.add('comment-item');
+            commentItem.innerHTML = `
+                <div class="comment-background">
+                    <img src="${document.getElementById('commentAvatar').src}" alt="Avatar" class="avatar">
+                    <h3>${commentName}</h3>
+                    <p>${commentDescription}</p>
+                    <div class="comment-footer">
+                        <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                        <span>0</span>
+                        <a href="javascript:void(0);" onclick="openReplyPage(this)">Répondre</a>
+                    </div>
+                </div>
+                <div class="replies">
+                    <!-- Réponses seront ajoutées ici -->
+                </div>
+            `;
+
+            // Ajouter le nouvel élément de commentaire à la liste des commentaires
+            document.querySelector('.comments-content').appendChild(commentItem);
+
+            // Réinitialiser le formulaire
+            document.getElementById('commentName').value = '';
+            document.getElementById('commentDescription').value = '';
+
+            // Fermer la page d'ajout de commentaire
+            closeAddCommentPage();
+        }
+
+        // Fonction pour ouvrir la page de réponse
+        function openReplyPage(element) {
+            const repliesContainer = element.parentElement.parentElement.querySelector('.replies');
+            document.getElementById('replyPage').style.display = 'flex';
+            repliesContainer.appendChild(document.getElementById('replyPage'));
+        }
+
+        // Fonction pour fermer la page de réponse
+        function closeReplyPage() {
+            document.getElementById('replyPage').style.display = 'none';
+
+
+        }
+
+
+
+
+
+
+
+        // Fonction pour publier une réponse
+        function publishReply() {
+            const replyName = document.getElementById('replyName').value;
+            const replyDescription = document.getElementById('replyDescription').value;
+
+            // Créer un nouvel élément de réponse
+            const replyItem = document.createElement('div');
+            replyItem.classList.add('comment-item');
+            replyItem.innerHTML = `
+                <div class="comment-background">
+                    <img src="${document.getElementById('replyAvatar').src}" alt="Avatar" class="avatar">
+                    <h3>${replyName}</h3>
+                    <p>${replyDescription}</p>
+                </div>
+            `;
+
+            // Ajouter le nouvel élément de réponse à la liste des réponses
+            const repliesContainer = document.querySelector('.replies');
+            repliesContainer.appendChild(replyItem);
+
+            // Fermer la page de réponse
+            closeReplyPage();
+        }
+
+        // Fonction pour activer ou désactiver le like
+        function toggleLike(element) {
+            element.classList.toggle('liked');
+            const likeCount = element.nextElementSibling;
+            const currentCount = parseInt(likeCount.textContent);
+            if (element.classList.contains('liked')) {
+                likeCount.textContent = currentCount + 1;
+            } else {
+                likeCount.textContent = currentCount - 1;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Get the button
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function openDevisPage() {
+            document.querySelector('.devis-page').style.display = 'flex';
+        }
+
+        function closeDevisPage() {
+            document.querySelector('.devis-page').style.display = 'none';
+        }
+
+        function openTermsPage() {
+            // Implémentez la logique pour ouvrir la page des termes et conditions en float
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            if (!email && !phone) {
+                alert('Veuillez entrer soit un email, soit un numéro de téléphone.');
+                return;
+            }
+
+            // Enregistrer les données et afficher la page de confirmation
+            closeDevisPage();
+            document.querySelector('.confirmation-page').style.display = 'flex';
+        }
+
+        function closeConfirmationPage() {
+            document.querySelector('.confirmation-page').style.display = 'none';
+        }
+
+        function updatePhoneCodeDevis() {
+            const countrySelect = document.getElementById('country-devis');
+            const selectedCountry = countrySelect.options[countrySelect.selectedIndex].value;
+            const countryCodeSpan = document.getElementById('countryCode-devis');
+
+            switch (selectedCountry) {
+                case 'AF':
+                    countryCodeSpan.textContent = '+93';
+                    break;
+                case 'AL':
+                    countryCodeSpan.textContent = '+355';
+                    break;
+                case 'DZ':
+                    countryCodeSpan.textContent = '+213';
+                    break;
+                case 'AD':
+                    countryCodeSpan.textContent = '+376';
+                    break;
+                case 'AO':
+                    countryCodeSpan.textContent = '+244';
+                    break;
+                case 'AI':
+                    countryCodeSpan.textContent = '+1-264';
+                    break;
+                case 'AG':
+                    countryCodeSpan.textContent = '+1-268';
+                    break;
+                case 'AR':
+                    countryCodeSpan.textContent = '+54';
+                    break;
+                case 'AM':
+                    countryCodeSpan.textContent = '+374';
+                    break;
+                case 'AW':
+                    countryCodeSpan.textContent = '+297';
+                    break;
+                case 'AU':
+                    countryCodeSpan.textContent = '+61';
+                    break;
+                case 'AT':
+                    countryCodeSpan.textContent = '+43';
+                    break;
+                case 'AZ':
+                    countryCodeSpan.textContent = '+994';
+                    break;
+                case 'BS':
+                    countryCodeSpan.textContent = '+1-242';
+                    break;
+                case 'BH':
+                    countryCodeSpan.textContent = '+973';
+                    break;
+                case 'BD':
+                    countryCodeSpan.textContent = '+880';
+                    break;
+                case 'BB':
+                    countryCodeSpan.textContent = '+1-246';
+                    break;
+                case 'BY':
+                    countryCodeSpan.textContent = '+375';
+                    break;
+                case 'BE':
+                    countryCodeSpan.textContent = '+32';
+                    break;
+                case 'BZ':
+                    countryCodeSpan.textContent = '+501';
+                    break;
+                case 'BJ':
+                    countryCodeSpan.textContent = '+229';
+                    break;
+                case 'BM':
+                    countryCodeSpan.textContent = '+1-441';
+                    break;
+                case 'BT':
+                    countryCodeSpan.textContent = '+975';
+                    break;
+                case 'BO':
+                    countryCodeSpan.textContent = '+591';
+                    break;
+                case 'BA':
+                    countryCodeSpan.textContent = '+387';
+                    break;
+                case 'BW':
+                    countryCodeSpan.textContent = '+267';
+                    break;
+                case 'BR':
+                    countryCodeSpan.textContent = '+55';
+                    break;
+                case 'BN':
+                    countryCodeSpan.textContent = '+673';
+                    break;
+                case 'BG':
+                    countryCodeSpan.textContent = '+359';
+                    break;
+                case 'BF':
+                    countryCodeSpan.textContent = '+226';
+                    break;
+                case 'BI':
+                    countryCodeSpan.textContent = '+257';
+                    break;
+                case 'KH':
+                    countryCodeSpan.textContent = '+855';
+                    break;
+                case 'CM':
+                    countryCodeSpan.textContent = '+237';
+                    break;
+                case 'CA':
+                    countryCodeSpan.textContent = '+1';
+                    break;
+                case 'CV':
+                    countryCodeSpan.textContent = '+238';
+                    break;
+                case 'CF':
+                    countryCodeSpan.textContent = '+236';
+                    break;
+                case 'TD':
+                    countryCodeSpan.textContent = '+235';
+                    break;
+                case 'CL':
+                    countryCodeSpan.textContent = '+56';
+                    break;
+                case 'CN':
+                    countryCodeSpan.textContent = '+86';
+                    break;
+                case 'CO':
+                    countryCodeSpan.textContent = '+57';
+                    break;
+                case 'KM':
+                    countryCodeSpan.textContent = '+269';
+                    break;
+                case 'CG':
+                    countryCodeSpan.textContent = '+242';
+                    break;
+                case 'CD':
+                    countryCodeSpan.textContent = '+243';
+                    break;
+                case 'CR':
+                    countryCodeSpan.textContent = '+506';
+                    break;
+                case 'HR':
+                    countryCodeSpan.textContent = '+385';
+                    break;
+                case 'CU':
+                    countryCodeSpan.textContent = '+53';
+                    break;
+                case 'CY':
+                    countryCodeSpan.textContent = '+357';
+                    break;
+                case 'CZ':
+                    countryCodeSpan.textContent = '+420';
+                    break;
+                case 'DK':
+                    countryCodeSpan.textContent = '+45';
+                    break;
+                case 'DJ':
+                    countryCodeSpan.textContent = '+253';
+                    break;
+                case 'DM':
+                    countryCodeSpan.textContent = '+1-767';
+                    break;
+                case 'DO':
+                    countryCodeSpan.textContent = '+1-809';
+                    break;
+                case 'EC':
+                    countryCodeSpan.textContent = '+593';
+                    break;
+                case 'EG':
+                    countryCodeSpan.textContent = '+20';
+                    break;
+                case 'SV':
+                    countryCodeSpan.textContent = '+503';
+                    break;
+                case 'GQ':
+                    countryCodeSpan.textContent = '+240';
+                    break;
+                case 'ER':
+                    countryCodeSpan.textContent = '+291';
+                    break;
+                case 'EE':
+                    countryCodeSpan.textContent = '+372';
+                    break;
+                case 'ET':
+                    countryCodeSpan.textContent = '+251';
+                    break;
+                case 'FJ':
+                    countryCodeSpan.textContent = '+679';
+                    break;
+                case 'FI':
+                    countryCodeSpan.textContent = '+358';
+                    break;
+                case 'FR':
+                    countryCodeSpan.textContent = '+33';
+                    break;
+                case 'GA':
+                    countryCodeSpan.textContent = '+241';
+                    break;
+                case 'GM':
+                    countryCodeSpan.textContent = '+220';
+                    break;
+                case 'GE':
+                    countryCodeSpan.textContent = '+995';
+                    break;
+                case 'DE':
+                    countryCodeSpan.textContent = '+49';
+                    break;
+                case 'GH':
+                    countryCodeSpan.textContent = '+233';
+                    break;
+                case 'GR':
+                    countryCodeSpan.textContent = '+30';
+                    break;
+                case 'GD':
+                    countryCodeSpan.textContent = '+1-473';
+                    break;
+                case 'GT':
+                    countryCodeSpan.textContent = '+502';
+                    break;
+                case 'GN':
+                    countryCodeSpan.textContent = '+224';
+                    break;
+                case 'GW':
+                    countryCodeSpan.textContent = '+245';
+                    break;
+                case 'GY':
+                    countryCodeSpan.textContent = '+592';
+                    break;
+                case 'HT':
+                    countryCodeSpan.textContent = '+509';
+                    break;
+                case 'HN':
+                    countryCodeSpan.textContent = '+504';
+                    break;
+                case 'HU':
+                    countryCodeSpan.textContent = '+36';
+                    break;
+                case 'IS':
+                    countryCodeSpan.textContent = '+354';
+                    break;
+                case 'IN':
+                    countryCodeSpan.textContent = '+91';
+                    break;
+                case 'ID':
+                    countryCodeSpan.textContent = '+62';
+                    break;
+                case 'IR':
+                    countryCodeSpan.textContent = '+98';
+                    break;
+                case 'IQ':
+                    countryCodeSpan.textContent = '+964';
+                    break;
+                case 'IE':
+                    countryCodeSpan.textContent = '+353';
+                    break;
+                case 'IL':
+                    countryCodeSpan.textContent = '+972';
+                    break;
+                case 'IT':
+                    countryCodeSpan.textContent = '+39';
+                    break;
+                case 'JM':
+                    countryCodeSpan.textContent = '+1-876';
+                    break;
+                case 'JP':
+                    countryCodeSpan.textContent = '+81';
+                    break;
+                case 'JO':
+                    countryCodeSpan.textContent = '+962';
+                    break;
+                case 'KZ':
+                    countryCodeSpan.textContent = '+7';
+                    break;
+                case 'KE':
+                    countryCodeSpan.textContent = '+254';
+                    break;
+                case 'KI':
+                    countryCodeSpan.textContent = '+686';
+                    break;
+                case 'KP':
+                    countryCodeSpan.textContent = '+850';
+                    break;
+                case 'KR':
+                    countryCodeSpan.textContent = '+82';
+                    break;
+                case 'KW':
+                    countryCodeSpan.textContent = '+965';
+                    break;
+                case 'KG':
+                    countryCodeSpan.textContent = '+996';
+                    break;
+                case 'LA':
+                    countryCodeSpan.textContent = '+856';
+                    break;
+                case 'LV':
+                    countryCodeSpan.textContent = '+371';
+                    break;
+                case 'LB':
+                    countryCodeSpan.textContent = '+961';
+                    break;
+                case 'LS':
+                    countryCodeSpan.textContent = '+266';
+                    break;
+                case 'LR':
+                    countryCodeSpan.textContent = '+231';
+                    break;
+                case 'LY':
+                    countryCodeSpan.textContent = '+218';
+                    break;
+                case 'LI':
+                    countryCodeSpan.textContent = '+423';
+                    break;
+                case 'LT':
+                    countryCodeSpan.textContent = '+370';
+                    break;
+                case 'LU':
+                    countryCodeSpan.textContent = '+352';
+                    break;
+                case 'MK':
+                    countryCodeSpan.textContent = '+389';
+                    break;
+                case 'MG':
+                    countryCodeSpan.textContent = '+261';
+                    break;
+                case 'MW':
+                    countryCodeSpan.textContent = '+265';
+                    break;
+                case 'MY':
+                    countryCodeSpan.textContent = '+60';
+                    break;
+                case 'MV':
+                    countryCodeSpan.textContent = '+960';
+                    break;
+                case 'ML':
+                    countryCodeSpan.textContent = '+223';
+                    break;
+                case 'MT':
+                    countryCodeSpan.textContent = '+356';
+                    break;
+                case 'MH':
+                    countryCodeSpan.textContent = '+692';
+                    break;
+                case 'MR':
+                    countryCodeSpan.textContent = '+222';
+                    break;
+                case 'MU':
+                    countryCodeSpan.textContent = '+230';
+                    break;
+                case 'MX':
+                    countryCodeSpan.textContent = '+52';
+                    break;
+                case 'FM':
+                    countryCodeSpan.textContent = '+691';
+                    break;
+                case 'MD':
+                    countryCodeSpan.textContent = '+373';
+                    break;
+                case 'MC':
+                    countryCodeSpan.textContent = '+377';
+                    break;
+                case 'MN':
+                    countryCodeSpan.textContent = '+976';
+                    break;
+                case 'ME':
+                    countryCodeSpan.textContent = '+382';
+                    break;
+                case 'MA':
+                    countryCodeSpan.textContent = '+212';
+                    break;
+                case 'MZ':
+                    countryCodeSpan.textContent = '+258';
+                    break;
+                case 'MM':
+                    countryCodeSpan.textContent = '+95';
+                    break;
+                case 'NA':
+                    countryCodeSpan.textContent = '+264';
+                    break;
+                case 'NR':
+                    countryCodeSpan.textContent = '+674';
+                    break;
+                case 'NP':
+                    countryCodeSpan.textContent = '+977';
+                    break;
+                case 'NL':
+                    countryCodeSpan.textContent = '+31';
+                    break;
+                case 'NZ':
+                    countryCodeSpan.textContent = '+64';
+                    break;
+                case 'NI':
+                    countryCodeSpan.textContent = '+505';
+                    break;
+                case 'NE':
+                    countryCodeSpan.textContent = '+227';
+                    break;
+                case 'NG':
+                    countryCodeSpan.textContent = '+234';
+                    break;
+                case 'NO':
+                    countryCodeSpan.textContent = '+47';
+                    break;
+                case 'OM':
+                    countryCodeSpan.textContent = '+968';
+                    break;
+                case 'PK':
+                    countryCodeSpan.textContent = '+92';
+                    break;
+                case 'PW':
+                    countryCodeSpan.textContent = '+680';
+                    break;
+                case 'PA':
+                    countryCodeSpan.textContent = '+507';
+                    break;
+                case 'PG':
+                    countryCodeSpan.textContent = '+675';
+                    break;
+                case 'PY':
+                    countryCodeSpan.textContent = '+595';
+                    break;
+                case 'PE':
+                    countryCodeSpan.textContent = '+51';
+                    break;
+                case 'PH':
+                    countryCodeSpan.textContent = '+63';
+                    break;
+                case 'PL':
+                    countryCodeSpan.textContent = '+48';
+                    break;
+                case 'PT':
+                    countryCodeSpan.textContent = '+351';
+                    break;
+                case 'QA':
+                    countryCodeSpan.textContent = '+974';
+                    break;
+                case 'RO':
+                    countryCodeSpan.textContent = '+40';
+                    break;
+                case 'RU':
+                    countryCodeSpan.textContent = '+7';
+                    break;
+                case 'RW':
+                    countryCodeSpan.textContent = '+250';
+                    break;
+                case 'KN':
+                    countryCodeSpan.textContent = '+1-869';
+                    break;
+                case 'LC':
+                    countryCodeSpan.textContent = '+1-758';
+                    break;
+                case 'VC':
+                    countryCodeSpan.textContent = '+1-784';
+                    break;
+                case 'WS':
+                    countryCodeSpan.textContent = '+685';
+                    break;
+                case 'SM':
+                    countryCodeSpan.textContent = '+378';
+                    break;
+                case 'ST':
+                    countryCodeSpan.textContent = '+239';
+                    break;
+                case 'SA':
+                    countryCodeSpan.textContent = '+966';
+                    break;
+                case 'SN':
+                    countryCodeSpan.textContent = '+221';
+                    break;
+                case 'RS':
+                    countryCodeSpan.textContent = '+381';
+                    break;
+                case 'SC':
+                    countryCodeSpan.textContent = '+248';
+                    break;
+                case 'SL':
+                    countryCodeSpan.textContent = '+232';
+                    break;
+                case 'SG':
+                    countryCodeSpan.textContent = '+65';
+                    break;
+                case 'SK':
+                    countryCodeSpan.textContent = '+421';
+                    break;
+                case 'SI':
+                    countryCodeSpan.textContent = '+386';
+                    break;
+                case 'SB':
+                    countryCodeSpan.textContent = '+677';
+                    break;
+                case 'SO':
+                    countryCodeSpan.textContent = '+252';
+                    break;
+                case 'ZA':
+                    countryCodeSpan.textContent = '+27';
+                    break;
+                case 'ES':
+                    countryCodeSpan.textContent = '+34';
+                    break;
+                case 'LK':
+                    countryCodeSpan.textContent = '+94';
+                    break;
+                case 'SD':
+                    countryCodeSpan.textContent = '+249';
+                    break;
+                case 'SR':
+                    countryCodeSpan.textContent = '+597';
+                    break;
+                case 'SZ':
+                    countryCodeSpan.textContent = '+268';
+                    break;
+                case 'SE':
+                    countryCodeSpan.textContent = '+46';
+                    break;
+                case 'CH':
+                    countryCodeSpan.textContent = '+41';
+                    break;
+                case 'SY':
+                    countryCodeSpan.textContent = '+963';
+                    break;
+                case 'TJ':
+                    countryCodeSpan.textContent = '+992';
+                    break;
+                case 'TZ':
+                    countryCodeSpan.textContent = '+255';
+                    break;
+                case 'TH':
+                    countryCodeSpan.textContent = '+66';
+                    break;
+                case 'TL':
+                    countryCodeSpan.textContent = '+670';
+                    break;
+                case 'TG':
+                    countryCodeSpan.textContent = '+228';
+                    break;
+                case 'TO':
+                    countryCodeSpan.textContent = '+676';
+                    break;
+                case 'TT':
+                    countryCodeSpan.textContent = '+1-868';
+                    break;
+                case 'TN':
+                    countryCodeSpan.textContent = '+216';
+                    break;
+                case 'TR':
+                    countryCodeSpan.textContent = '+90';
+                    break;
+                case 'TM':
+                    countryCodeSpan.textContent = '+993';
+                    break;
+                case 'TV':
+                    countryCodeSpan.textContent = '+688';
+                    break;
+                case 'UG':
+                    countryCodeSpan.textContent = '+256';
+                    break;
+                case 'UA':
+                    countryCodeSpan.textContent = '+380';
+                    break;
+                case 'AE':
+                    countryCodeSpan.textContent = '+971';
+                    break;
+                case 'GB':
+                    countryCodeSpan.textContent = '+44';
+                    break;
+                case 'UY':
+                    countryCodeSpan.textContent = '+598';
+                    break;
+                case 'UZ':
+                    countryCodeSpan.textContent = '+998';
+                    break;
+                case 'VU':
+                    countryCodeSpan.textContent = '+678';
+                    break;
+                case 'VA':
+                    countryCodeSpan.textContent = '+379';
+                    break;
+                case 'VE':
+                    countryCodeSpan.textContent = '+58';
+                    break;
+                case 'VN':
+                    countryCodeSpan.textContent = '+84';
+                    break;
+                case 'YE':
+                    countryCodeSpan.textContent = '+967';
+                    break;
+                case 'ZM':
+                    countryCodeSpan.textContent = '+260';
+                    break;
+                case 'ZW':
+                    countryCodeSpan.textContent = '+263';
+                    break;
+                default:
+                    countryCodeSpan.textContent = '+33';
+                    break;
+            }
+
+
+        }
+
+
+
+
+        // Fonction pour mettre à jour les sous-services en fonction du service sélectionné
+        function updateSubServiceSelect() {
+            var serviceSelect = document.getElementById('service');
+            var subServiceGroup = document.getElementById('sub-service-group');
+            var subServiceSelect = document.getElementById('sub-service');
+            var devWebTypesGroup = document.getElementById('dev-web-types-group');
+            var devMobileTypesGroup = document.getElementById('dev-mobile-types-group');
+            var videoMontageTypesGroup = document.getElementById('video-montage-types-group');
+            var designTypesGroup = document.getElementById('design-types-group');
+            var redactionTypesGroup = document.getElementById('redaction-types-group');
+
+            // Réinitialiser les groupes de sous-services
+            subServiceSelect.innerHTML = '';
+
+            // Vérifier la valeur sélectionnée dans le service
+            switch (serviceSelect.value) {
+                case 'developpement-web':
+                    devWebTypesGroup.style.display = 'block';
+                    devMobileTypesGroup.style.display = 'none';
+                    videoMontageTypesGroup.style.display = 'none';
+                    designTypesGroup.style.display = 'none';
+                    redactionTypesGroup.style.display = 'none';
+                    break;
+                case 'developpement-mobile':
+                    devWebTypesGroup.style.display = 'none';
+                    devMobileTypesGroup.style.display = 'block';
+                    videoMontageTypesGroup.style.display = 'none';
+                    designTypesGroup.style.display = 'none';
+                    redactionTypesGroup.style.display = 'none';
+                    break;
+                case 'montage-video':
+                    devWebTypesGroup.style.display = 'none';
+                    devMobileTypesGroup.style.display = 'none';
+                    videoMontageTypesGroup.style.display = 'block';
+                    designTypesGroup.style.display = 'none';
+                    redactionTypesGroup.style.display = 'none';
+                    break;
+                case 'design-graphique':
+                    devWebTypesGroup.style.display = 'none';
+                    devMobileTypesGroup.style.display = 'none';
+                    videoMontageTypesGroup.style.display = 'none';
+                    designTypesGroup.style.display = 'block';
+                    redactionTypesGroup.style.display = 'none';
+                    break;
+                case 'redaction-web':
+                    devWebTypesGroup.style.display = 'none';
+                    devMobileTypesGroup.style.display = 'none';
+                    videoMontageTypesGroup.style.display = 'none';
+                    designTypesGroup.style.display = 'none';
+                    redactionTypesGroup.style.display = 'block';
+                    break;
+                default:
+                    // Si aucun service n'est sélectionné, cacher tous les sous-services
+                    devWebTypesGroup.style.display = 'none';
+                    devMobileTypesGroup.style.display = 'none';
+                    videoMontageTypesGroup.style.display = 'none';
+                    designTypesGroup.style.display = 'none';
+                    redactionTypesGroup.style.display = 'none';
+                    break;
+            }
+
+            // Afficher le groupe de sous-services seulement si une option est sélectionnée
+            if (subServiceSelect.options.length > 0) {
+                subServiceGroup.style.display = 'block';
+            } else {
+                subServiceGroup.style.display = 'none';
+            }
+        }
+
+        // Fonction pour ajouter des selects additionnels en fonction du sous-service sélectionné
+        function updateAdditionalSelects() {
+            var subServiceSelect = document.getElementById('sub-service');
+            var additionalSelectsContainer = document.getElementById('additional-selects');
+
+            // Réinitialiser les selects additionnels
+            additionalSelectsContainer.innerHTML = '';
+
+            // Ajouter des selects additionnels en fonction du sous-service sélectionné
+            switch (subServiceSelect.value) {
+                case 'frontend':
+                    additionalSelectsContainer.innerHTML = `
+                        <div class="form-group">
+                            <label for="frontend-type">Type de Frontend</label>
+                            <select id="frontend-type" name="frontend-type">
+                                <option value="html-css">HTML/CSS</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="framework">Framework Frontend</option>
+                            </select>
+                        </div>`;
+                    break;
+                case 'backend':
+                    additionalSelectsContainer.innerHTML = `
+                        <div class="form-group">
+                            <label for="backend-type">Type de Backend</label>
+                            <select id="backend-type" name="backend-type">
+                                <option value="nodejs">Node.js</option>
+                                <option value="php">PHP</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </div>`;
+                    break;
+                case 'ios':
+                    additionalSelectsContainer.innerHTML = `
+                        <div class="form-group">
+                            <label for="ios-type">Type d'application iOS</label>
+                            <select id="ios-type" name="ios-type">
+                                <option value="swift">Swift</option>
+                                <option value="objective-c">Objective-C</option>
+                                <option value="react-native">React Native</option>
+                            </select>
+                        </div>`;
+                    break;
+                case 'android':
+                    additionalSelectsContainer.innerHTML = `
+                        <div class="form-group">
+                            <label for="android-type">Type d'application Android</label>
+                            <select id="android-type" name="android-type">
+                                <option value="java">Java</option>
+                                <option value="kotlin">Kotlin</option>
+                                <option value="react-native">React Native</option>
+                            </select>
+                        </div>`;
+                    break;
+                // Ajouter d'autres cas en fonction des besoins
+                default:
+                    // Aucune sélection ou sélection inconnue, ne rien ajouter
+                    break;
+            }
+        }
+
+        // Écouteur d'événement pour initialiser la mise à jour des sous-services au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSubServiceSelect();
+        });
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
